@@ -30,6 +30,10 @@
     height:100%;
 }
 
+#layout001{
+  min-height: 1200px;
+}
+
 .color-beige{
   color:beige;
 }

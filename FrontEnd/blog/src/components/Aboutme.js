@@ -1,7 +1,6 @@
-import { List, Typography, Collapse, Card, Divider, Image, Carousel, Comment } from 'antd';
-import { Drawer, Form, Button, Col, Row, Input } from 'antd';
-import { CrownOutlined, SolutionOutlined, ConsoleSqlOutlined, SafetyCertificateOutlined, UserOutlined } from '@ant-design/icons';
-import { PlusOutlined, BankOutlined } from '@ant-design/icons';
+import { List, Typography, Collapse, Card, Divider, Image, Comment } from 'antd';
+import { CrownOutlined, ConsoleSqlOutlined, SafetyCertificateOutlined, UserOutlined } from '@ant-design/icons';
+import { BankOutlined } from '@ant-design/icons';
 import React from 'react';
 import ntu from '../static/img/ntu.jpg';
 import neu from '../static/img/neu.jpg';
@@ -15,22 +14,7 @@ import js from '../static/img/certificates/js.jpg';
 import kpmg from '../static/img/certificates/KPMG-DA.png';
 import python from '../static/img/certificates/python3.jpg';
 import who from '../static/img/certificates/WHO-godata.png';
-import guess from '../static/img/projects/guess.jpg';
-import spa from '../static/img/projects/spa.jpg';
-import pfas from '../static/img/projects/pfas.jpg';
-import imiscloud from '../static/img/projects/imiscloud.png';
-import homesearch from '../static/img/projects/homesearch.png';
-import his from '../static/img/projects/his.jpg';
-import hds from '../static/img/projects/hds.jpg';
-import excel from '../static/img/projects/excel.jpg';
-import beagvs from '../static/img/projects/bea-gvs.jpg';
 import self from '../static/img/summary.png';
-import crs1 from '../static/img/projects/bea-gvs-crs.png';
-import crs2 from '../static/img/projects/alg-crs.png';
-import crs3 from '../static/img/projects/harrier-crs.png';
-import crs4 from '../static/img/projects/hnas-crs.jpg';
-import crs5 from '../static/img/projects/homesearch-crs.png';
-import crs6 from '../static/img/projects/pfas-crs.png';
 
 
 const { Panel } = Collapse;
@@ -55,7 +39,7 @@ const pythons = [
 
 const data = [
     {
-        author: 'Anonymous',
+        author: 'Hard Power',
         avatar: <UserOutlined />,
         content: (
             <p>
@@ -68,7 +52,7 @@ const data = [
         ),
     },
     {
-        author: 'Anonymous',
+        author: 'Soft Power',
         avatar: <UserOutlined />,
         content: (
             <p>
@@ -84,41 +68,9 @@ const data = [
 
 
 class Aboutme extends React.Component {
-    state = { visible: false };
-
-    showDrawer = () => {
-        this.setState({
-            visible: true,
-        });
-    };
-
-    onClose = () => {
-        this.setState({
-            visible: false,
-        });
-    };
     render() {
         return (
-            <div>
-                {/* carousel */}
-                <div id='crs001' style={{ display: 'grid', gridTemplateColumns: '50% 50%' }}>
-                    <Carousel autoplay dotPosition='left' style={{ gridColumn: '0' }}>
-                        <Image src={crs1} ></Image>
-                        <Image src={crs2} ></Image>
-                        <Image src={crs3} ></Image>
-                        <Image src={crs4} ></Image>
-                        <Image src={crs5} ></Image>
-                        <Image src={crs6} ></Image>
-                    </Carousel>
-                    <Carousel autoplay dotPosition='right' style={{ gridColumn: '1' }}>
-                        <Image src={crs6} ></Image>
-                        <Image src={crs5} ></Image>
-                        <Image src={crs4} ></Image>
-                        <Image src={crs3} ></Image>
-                        <Image src={crs2} ></Image>
-                        <Image src={crs1} ></Image>
-                    </Carousel>
-                </div>
+            <div style={{display:this.props.aboutShow}}>
                 {/* summary */}
                 <div id='smr001' className='margin-97'>
                     <Divider orientation="left"><CrownOutlined /> Summary</Divider>
@@ -126,92 +78,14 @@ class Aboutme extends React.Component {
                         <Image style={{ gridColumn: '0/2' }} src={self}></Image>
                         <div style={{ gridColumn: '3/9', marginLeft: '2%' }}>
                             <List
-                                className="comment-list" header={`${data.length} Comments`}
+                                className="comment-list" header='Self-appraisal'
                                 itemLayout="horizontal" dataSource={data}
                                 renderItem={item => (
                                     <li><Comment author={item.author} avatar={item.avatar} content={item.content} /></li>
                                 )}
                             />
-                            <Button type="ghost" onClick={this.showDrawer} style={{margin:'2% 0%'}}>
-                                <PlusOutlined /> Add Comments
-                            </Button>
-                            <Drawer
-                                title="Add Comments" width={720} onClose={this.onClose} visible={this.state.visible}
-                                bodyStyle={{ paddingBottom: 80 }}
-                                footer={
-                                    <div style={{textAlign: 'right'}}>
-                                        <Button onClick={this.onClose} style={{ marginRight: 8 }}>Cancel</Button>
-                                        <Button onClick={this.onClose} type="primary">Submit</Button>
-                                    </div>}>
-                                <Form layout="vertical" hideRequiredMark>
-                                    <Row gutter={16}>
-                                        <Col span={24}>
-                                            <Form.Item name="name" label="Name" rules={[{ required: true, message: 'Please enter name' }]}>
-                                                <Input placeholder="Please enter name" />
-                                            </Form.Item>
-                                        </Col>
-                                        <Col span={24}>
-                                            <Form.Item name="description" label="Description" rules={[{required: true, message: 'please enter comments'},]}>
-                                                <Input.TextArea rows={4} placeholder="please enter comments" />
-                                            </Form.Item>
-                                        </Col>
-                                    </Row>
-                                </Form>
-                            </Drawer>
                         </div>
                     </div>
-                </div>
-                {/* projects */}
-                <div id='prj001' className='margin-97'>
-                    <Divider orientation="left"><SolutionOutlined /> Projects</Divider>
-                    <Collapse defaultActiveKey={['p1']} ghost>
-                        <Panel className='font-bold' header="IMIS Cloud Storage" key="p1">
-                            <p className='font-normal'>Apr 2020 - May 2020</p>
-                            <p className='font-normal'>Django, Bootstrap, Sqlite</p>
-                            <Image src={imiscloud}></Image>
-                        </Panel>
-                        <Panel className='font-bold' header="Gold Visualization System" key="p2">
-                            <p className='font-normal'>Mar 2020 - Apr 2020</p>
-                            <p className='font-normal'>Tornado, Bootstrap, Sqlite</p>
-                            <Image src={beagvs}></Image>
-                        </Panel>
-                        <Panel className='font-bold' header="Personal Website" key="p3">
-                            <p className='font-normal'>Jan 2020 - Feb 2020</p>
-                            <p className='font-normal'>Django, Bootstrap, Mysql</p>
-                            <Image src={pfas}></Image>
-                        </Panel>
-                        <Panel className='font-bold' header="Home Rent App" key="p4">
-                            <p className='font-normal'>Jan 2020 - Apr 2020</p>
-                            <p className='font-normal'>Angular, Express, MongoDB, Ng-Zorro</p>
-                            <Image src={homesearch}></Image>
-                        </Panel>
-                        <Panel className='font-bold' header="Spreadsheet" key="p5">
-                            <p className='font-normal'>HTML/CSS/JS</p>
-                            <Image src={excel}></Image>
-                        </Panel>
-                        <Panel className='font-bold' header="Long Page Application" key="p6">
-                            <p className='font-normal'>HTML/CSS/JS</p>
-                            <Image src={spa}></Image>
-                        </Panel>
-                        <Panel className='font-bold' header="MA Education Data Analysis" key="p7">
-                            <p className='font-normal'>Python(Jupyter Notebook, Numpy, Pandas, Scipy, Sklearn, Matplotlib)</p>
-                        </Panel>
-                        <Panel className='font-bold' header="Hotel Database System" key="p8">
-                            <p className='font-normal'>Sept 2019 - Dec 2019</p>
-                            <p className='font-normal'>Java, Sqlserver, Power BI</p>
-                            <Image src={hds}></Image>
-                        </Panel>
-                        <Panel className='font-bold' header="Hospital Information System" key="p9">
-                            <p className='font-normal'>Sept 2019 - Dec 2019</p>
-                            <p className='font-normal'>Java</p>
-                            <Image src={his}></Image>
-                        </Panel>
-                        <Panel className='font-bold' header="Gamification Used by Exploratory Search System[GUESS]" key="p10">
-                            <p className='font-normal'>Sept 2018 - Jun 2019</p>
-                            <p className='font-normal'>Axure RP</p>
-                            <Image src={guess}></Image>
-                        </Panel>
-                    </Collapse>
                 </div>
                 {/* technology stack */}
                 <div id='tng001' className='margin-97'>
@@ -242,38 +116,47 @@ class Aboutme extends React.Component {
                     <Collapse defaultActiveKey={['c1']} ghost>
                         <Panel className='font-bold' header="Data Analytics Consulting Virtual Internship" key="c1">
                             <p className='font-normal'>KPMG (Issued Aug, 2020)</p>
+                            <p><a target='_blank' rel="noopener noreferrer" href='https://insidesherpa.s3.amazonaws.com/completion-certificates/KPMG/m7W4GMqeT3bh9Nb2c_KPMG_EaQWiwTz5acSuNWjd_completion_certificate.pdf'>Link</a></p>
                             <Image src={kpmg}></Image>
                         </Panel>
                         <Panel className='font-bold' header="Software Engineering Virtual Experience" key="c2">
                             <p className='font-normal'>JPMorgan Chase & Co (Issued Aug, 2020)</p>
+                            <p><a target='_blank' rel="noopener noreferrer" href='https://insidesherpa.s3.amazonaws.com/completion-certificates/JP%20Morgan/R5iK7HMxJGBgaSbvk_JPMorgan%20Chase_EaQWiwTz5acSuNWjd_completion_certificate.pdf'>Link</a></p>
                             <Image src={jpmorgan}></Image>
                         </Panel>
                         <Panel className='font-bold' header="Google Analytics Individual Qualification" key="c3">
                             <p className='font-normal'>Google (Issued Aug, 2020)</p>
+                            <p><a target='_blank' rel="noopener noreferrer" href='https://skillshop.exceedlms.com/student/award/56443312'>Link</a></p>
                             <Image src={google}></Image>
                         </Panel>
                         <Panel className='font-bold' header="Data Analytics Program" key="c4">
                             <p className='font-normal'>General Electric (Issued Aug, 2020)</p>
+                            <p><a target='_blank' rel="noopener noreferrer" href='https://insidesherpa.s3.amazonaws.com/completion-certificates/General%20Electric%20%28GE%29/ThbphD5N5WRsd9Mxo_General%20Electric_EaQWiwTz5acSuNWjd_completion_certificate.pdf'>Link</a></p>
                             <Image src={ge}></Image>
                         </Panel>
                         <Panel className='font-bold' header="Go.Data" key="c5">
                             <p className='font-normal'>World Health Organization (Issued Aug, 2020)</p>
+                            <p><a target='_blank' rel="noopener noreferrer" href='https://www.who.int/'>Link</a></p>
                             <Image src={who}></Image>
                         </Panel>
                         <Panel className='font-bold' header="Visualization Data By Python" key="c6">
                             <p className='font-normal'>IBM (Issued May, 2020)</p>
+                            <p><a target='_blank' rel="noopener noreferrer" href='https://courses.edx.org/certificates/1ce4ab37a776413595b03e884461c396'>Link</a></p>
                             <Image src={ibm}></Image>
                         </Panel>
                         <Panel className='font-bold' header="Python 3" key="c7">
                             <p className='font-normal'>SoloLearn (Issued December, 2019)</p>
+                            <p><a target='_blank' rel="noopener noreferrer" href='http://www.linkedin.com/in/yizhe-zhang'>Link</a></p>
                             <Image src={python}></Image>
                         </Panel>
                         <Panel className='font-bold' header="JavaScript" key="c8">
                             <p className='font-normal'>SoloLearn (Issued December, 2019)</p>
+                            <p><a target='_blank' rel="noopener noreferrer" href='http://www.linkedin.com/in/yizhe-zhang'>Link</a></p>
                             <Image src={js}></Image>
                         </Panel>
                         <Panel className='font-bold' header="BI Developer" key="c9">
                             <p className='font-normal'>Bluelime (Issued November,2019)</p>
+                            <p><a target='_blank' rel="noopener noreferrer" href='https://www.udemy.com/certificate/UC-D2TDUN3J/'>Link</a></p>
                             <Image src={bi}></Image>
                         </Panel>
                     </Collapse>

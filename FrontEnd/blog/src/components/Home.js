@@ -2,13 +2,16 @@ import React from 'react';
 import sidephoto from '../static/img/ervin.jpg';
 import ezapp from '../static/others/ezapp.apk';
 import { Layout, Menu, Divider, Image } from 'antd';
-import { Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import {
     LaptopOutlined, MailOutlined, LinkedinOutlined,GithubOutlined, ZhihuOutlined, ContactsOutlined, SolutionOutlined,
-    CrownOutlined, DownloadOutlined, BookOutlined, ConsoleSqlOutlined, SafetyCertificateOutlined, CrownTwoTone,BankOutlined
+    CrownOutlined, DownloadOutlined, BookOutlined, ConsoleSqlOutlined, SafetyCertificateOutlined, CrownTwoTone,BankOutlined,
+    MessageOutlined, LineChartOutlined
 } from '@ant-design/icons';
 import Blog from './Blog';
 import Aboutme from './Aboutme';
+import Projects from './Projects';
+import MsgBoard from './MsgBoard';
 
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
@@ -16,18 +19,66 @@ const { SubMenu } = Menu;
 class Home extends React.Component {
     state = {
         collapsed: false,
-        current: 'Aboutme',
+        aboutShow:'block',
+        projectShow:'none',
+        blogShow:'none',
+        msgboardShow:'none',
+        visualShow:'none'
     };
 
     onCollapse = collapsed => {
         this.setState({ collapsed });
     };
 
-    handleClick = e => {
-        this.setState({ current: e.key });
-    };
+    changeShow(msg){
+        if (msg === 'about'){
+            this.setState({
+                aboutShow:'block',
+                projectShow:'none',
+                blogShow:'none',
+                msgboardShow:'none',
+                visualShow:'none'
+            })
+        }
+        else if (msg === 'blog'){
+            this.setState({
+                aboutShow:'none',
+                projectShow:'none',
+                blogShow:'block',
+                msgboardShow:'none',
+                visualShow:'none'
+            })
+        }
+        else if (msg === 'project'){
+            this.setState({
+                aboutShow:'none',
+                projectShow:'block',
+                blogShow:'none',
+                msgboardShow:'none',
+                visualShow:'none'
+            })
+        }
+        else if (msg === 'msgboard'){
+            this.setState({
+                aboutShow:'none',
+                projectShow:'none',
+                blogShow:'none',
+                msgboardShow:'block',
+                visualShow:'none'
+            })
+        }
+        else if (msg === 'visual'){
+            this.setState({
+                aboutShow:'none',
+                projectShow:'none',
+                blogShow:'none',
+                msgboardShow:'none',
+                visualShow:'block'
+            })
+        }
+    }
+
     render() {
-        const { current } = this.state;
         return (
             <Layout id='layout001'>
                 {/* Side Bar */}
@@ -37,14 +88,14 @@ class Home extends React.Component {
                     </div>
                     <Image src={sidephoto} alt="" width="90%" />
                     <Divider style={{ width: '80%', color: 'beige' }}>Ervin</Divider>
-                    <Menu theme="dark" defaultOpenKeys={['0']} mode="inline">
-                        <Menu.Item key="0" icon={<CrownTwoTone />}>
+                    <Menu theme="dark" selectedKeys={[]} mode="inline">
+                        <Menu.Item key="0" icon={<CrownTwoTone />} onClick={()=>this.changeShow('about')}>
                             <a href='#smr001'>Yizhe Zhang</a>
                         </Menu.Item>
-                        <Menu.Item key="1" icon={<BankOutlined />}>
-                            <a href='#edu001'>&nbsp;&nbsp;NEU</a>
+                        <Menu.Item key="1" icon={<BankOutlined />} onClick={()=>this.changeShow('about')}>
+                            <a href='#edu001'>NEU</a>
                         </Menu.Item>
-                        <Menu.Item key="2" icon={<LaptopOutlined />}>
+                        <Menu.Item key="2" icon={<LaptopOutlined />} onClick={()=>this.changeShow('about')}>
                             <a href='#tng001'>Information Systems</a>
                         </Menu.Item>
                         <SubMenu key="sub1" icon={<ContactsOutlined />} title="Contact">
@@ -80,29 +131,37 @@ class Home extends React.Component {
                 <Layout>
                     {/* Header */}
                     <Header id='header001'>
-                        <Menu theme="dark" onClick={this.handleClick} selectedKeys={[current]} mode="horizontal">
+                        <Menu theme="dark" onClick={this.handleClick} mode="horizontal" selectedKeys={[]}>
                             <SubMenu key="Aboutme" icon={<CrownOutlined />} title="About Me">
-                                <Menu.Item key="Websites" icon={<SolutionOutlined />}>
-                                    <a href='#prj001'>Projects</a>
-                                </Menu.Item>
-                                <Menu.Item key="Technology" icon={<ConsoleSqlOutlined />}>
+                                <Menu.Item key="Technology" icon={<ConsoleSqlOutlined />} onClick={()=>this.changeShow('about')}>
                                     <a href='#tng001'>Technology Stack</a>
                                 </Menu.Item>
-                                <Menu.Item key="Certificates" icon={<SafetyCertificateOutlined />}>
+                                <Menu.Item key="Certificates" icon={<SafetyCertificateOutlined />} onClick={()=>this.changeShow('about')}>
                                     <a href='#crf001'>Certificates</a></Menu.Item>
-                                <Menu.Item key="Education" icon={<BankOutlined />}>
-                                    <a href='#edu001'>&nbsp;&nbsp;Education</a>
+                                <Menu.Item key="Education" icon={<BankOutlined />} onClick={()=>this.changeShow('about')}>
+                                    <a href='#edu001'>Education</a>
                                 </Menu.Item>
                             </SubMenu>
-                            <Menu.Item key="Blog" icon={<BookOutlined />}>
+                            <Menu.Item key="Projects" icon={<SolutionOutlined />} onClick={()=>this.changeShow('project')}>
+                                Projects
+                            </Menu.Item>
+                            <Menu.Item key="Blog" icon={<BookOutlined />} onClick={()=>this.changeShow('blog')}>
                                 Blog
+                            </Menu.Item>
+                            <Menu.Item key="msgboard" icon={<MessageOutlined />} onClick={()=>this.changeShow('msgboard')}>
+                                Message Board
+                            </Menu.Item>
+                            <Menu.Item key="visual" icon={<LineChartOutlined />} onClick={()=>this.changeShow('visual')}>
+                                Visualization
                             </Menu.Item>
                         </Menu>
                     </Header>
                     {/* Content */}
                     <Content>
-                        <Aboutme></Aboutme>
-                        <Blog></Blog>
+                        <Aboutme aboutShow={this.state.aboutShow}></Aboutme>
+                        <Projects projectShow={this.state.projectShow}></Projects>
+                        <Blog blogShow={this.state.blogShow}></Blog>
+                        <MsgBoard msgboardShow={this.state.msgboardShow}></MsgBoard >
                     </Content>
                     {/* Footer */}
                     <Footer>

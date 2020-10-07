@@ -1,6 +1,9 @@
 import React from 'react';
 import axios from 'axios';
-import Articles from './Articles';
+import { List } from 'antd';
+import { CrownTwoTone } from '@ant-design/icons';
+
+const blogApi = 'http://127.0.0.1:8000'
 
 class Blog extends React.Component {
     state = {
@@ -8,7 +11,7 @@ class Blog extends React.Component {
     }
 
     componentDidMount() {
-        axios.get('http://127.0.0.1:8000/api/')
+        axios.get(`${blogApi}/api/blog`)
             .then(res => {
                 this.setState(
                     {
@@ -20,7 +23,23 @@ class Blog extends React.Component {
 
     render() {
         return (
-            <Articles data={this.state.articles} />
+            <div style={{display:this.props.blogShow}}>
+            <List
+            itemLayout="vertical" size="large" pagination={{ onChange: page => {}, pageSize: 1}}
+            dataSource={this.state.articles}
+            footer=''
+            renderItem={item => (
+                <List.Item key={item.nid} actions='' extra=''>
+                    <List.Item.Meta
+                        avatar={<CrownTwoTone />}
+                        title={item.main_title}
+                        description={item.sub_title}
+                    />
+                    {item.content}
+                </List.Item>
+            )}
+        />
+        </div>
         )
     }
 }

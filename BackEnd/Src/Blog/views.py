@@ -1,7 +1,13 @@
-from Blog.models import Article
-from .serializers import ArticleSerializer
+from Blog.models import Blog,Msg
+from .serializers import BlogSerializer,MsgSerializer
 from rest_framework import viewsets
+from rest_framework.response import Response
 
-class ArticleViewSet(viewsets.ModelViewSet):
-    serializer_class = ArticleSerializer
-    queryset = Article.objects.all()
+class BlogViewSet(viewsets.ModelViewSet):
+    serializer_class = BlogSerializer
+    queryset = Blog.objects.all()
+
+
+class MsgViewSet(viewsets.ModelViewSet):
+    serializer_class = MsgSerializer
+    queryset = Msg.objects.order_by('-time')

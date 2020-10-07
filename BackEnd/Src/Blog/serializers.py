@@ -1,7 +1,12 @@
 from rest_framework import serializers
-from .models import Article
+from .models import Blog,Msg
 
-class ArticleSerializer(serializers.ModelSerializer):
+class BlogSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Article
+        model = Blog
         fields = ('nid','main_title','sub_title','content','article_type')
+
+class MsgSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Msg
+        fields = ('mid','time','name','tags','content')

@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class Article(models.Model):
+class Blog(models.Model):
     nid = models.AutoField(primary_key=True)
     main_title = models.CharField(max_length=50, verbose_name='main_title', editable=True)
     sub_title = models.CharField(max_length=50, verbose_name='sub_title', editable=True)
@@ -17,3 +17,13 @@ class Article(models.Model):
 
     def __str__(self):
         return self.main_title
+
+class Msg(models.Model):
+    mid = models.AutoField(primary_key=True)
+    time = models.DateTimeField(auto_now=True)
+    name = models.CharField(max_length=50, verbose_name='username', editable=True)
+    tags = models.CharField(max_length=7, verbose_name='tags', editable=True)
+    content = models.TextField()
+
+    def __str__(self):
+        return self.name
