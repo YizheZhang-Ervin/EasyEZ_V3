@@ -1,25 +1,89 @@
-.trigger {
-    font-size: 18px;
-    line-height: 64px;
-    padding: 0 24px;
-    cursor: pointer;
-    transition: color 0.3s;
-  }
-  
-.trigger:hover {
-    color: #1890ff;
-  }
-  
-.logo {
-    height: 32px;
-    background: rgba(255, 255, 255, 0.2);
-    margin: 16px;
-  }
-  
-.site-layout .site-layout-background {
-    background: #fff;
-  }
+.ant-layout-sider,.ant-layout-header{
+  background-color: rgba(20,32,68,0.9);
+  color:beige;
+  font-size: 1.2em;
+  text-align:center;
+}
 
-#root,#layout001,.App{
+.ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub{
+  background-color: rgba(20,32,68,0.1);
+  color:beige;
+}
+
+.ant-menu.ant-menu-dark .ant-menu-sub{
+  background-color: rgba(20,32,68,0.9);
+  color:beige;
+}
+
+.ant-layout-content{
+  background-color: beige;
+  font-size: 1em;
+}
+
+.ant-layout-footer{
+  background-color: beige;
+  text-align:center;
+  font-size: 1em;
+}
+
+#layout001,.App{
     height:100%;
+}
+
+.color-beige{
+  color:beige;
+}
+
+.welcome-header{
+  position: fixed;
+  top: 1%;
+  width: 100%;
+  font-size: 2em;
+  margin-left: 5%;
+}
+
+.welcome-main{
+  position: fixed;
+  top: 35%;
+  right: 15%;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.welcome-footer{
+  position: fixed;
+  bottom: 1%;
+  text-align: center;
+  width: 100%;
+}
+
+.ecllipsis{
+  overflow: hidden!important;
+  white-space: nowrap!important;
+  text-overflow: ellipsis!important;
+}
+
+.ant-card,.ant-card-type-inner .ant-card-head{
+  background: transparent!important;
+}
+
+.ant-layout-content{
+  min-height: auto;
+}
+
+.font-bold{
+  font-weight: bold;
+}
+
+.font-normal{
+  font-weight: normal;
+}
+
+.margin-97{
+  width:97%;
+  margin:auto;
+}
+
+.ant-carousel{
+  margin: 0.2% 0.2%;
 }
