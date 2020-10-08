@@ -40,7 +40,7 @@ ROOT_URLCONF = 'PersonalWebsite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['static'],
+        'DIRS': ['Src/static'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
