@@ -3,7 +3,7 @@ import axios from 'axios';
 import { List } from 'antd';
 import { CrownTwoTone } from '@ant-design/icons';
 
-const blogApi = 'http://127.0.0.1:8000'
+const blogApi = 'http://127.0.0.1:8000';
 
 class Blog extends React.Component {
     state = {
@@ -11,7 +11,7 @@ class Blog extends React.Component {
     }
 
     componentDidMount() {
-        axios.get(`${blogApi}/api/blog`)
+        axios.get(`${blogApi}/api/blog/`)
             .then(res => {
                 this.setState(
                     {

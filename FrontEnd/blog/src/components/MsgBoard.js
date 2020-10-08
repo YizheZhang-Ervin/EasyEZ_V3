@@ -3,7 +3,8 @@ import axios from 'axios';
 import { SmileTwoTone, PlusOutlined } from '@ant-design/icons';
 import { List, Drawer, Form, Button, Col, Row, Input, message } from 'antd';
 
-const msgApi = 'http://127.0.0.1:8000'
+const msgApi = 'http://127.0.0.1:8000';
+
 const headers = {
     'Content-Type': 'application/json',
     'Authorization':'Token df60f1c39d32439a42e481d1733beed4557f6cfb',
