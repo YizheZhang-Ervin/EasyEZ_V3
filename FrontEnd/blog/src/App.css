@@ -1,18 +1,22 @@
 .ant-layout-sider,.ant-layout-header{
-  background-color: rgba(20,32,68,0.9);
+  background-color: rgba(20,32,68,1);
   color:beige;
   font-size: 1.2em;
   text-align:center;
 }
 
-.ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub{
-  background-color: rgba(20,32,68,0.1);
+.ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub,.ant-menu.ant-menu-dark .ant-menu-sub{
+  background-color: rgba(20,32,68,0.9);
   color:beige;
 }
 
-.ant-menu.ant-menu-dark .ant-menu-sub{
-  background-color: rgba(20,32,68,0.9);
+.ant-menu-dark.ant-menu-horizontal > .ant-menu-item:hover,.ant-menu-dark .ant-menu-item:hover{
+  background-color: rgba(255,255,255,0.15);
   color:beige;
+}
+
+.ant-layout-sider-trigger{
+  background: rgba(255,255,255,0.1);
 }
 
 .ant-layout-content{
@@ -30,10 +34,6 @@
     height:100%;
 }
 
-#layout001{
-  min-height: 1200px;
-}
-
 .color-beige{
   color:beige;
 }
@@ -49,7 +49,6 @@
 .welcome-main{
   position: fixed;
   top: 35%;
-  right: 15%;
   font-size: 1.3em;
   text-align: center;
 }

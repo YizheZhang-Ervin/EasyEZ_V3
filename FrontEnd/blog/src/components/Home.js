@@ -1,7 +1,7 @@
 import React from 'react';
 import sidephoto from '../static/img/ervin.jpg';
 import ezapp from '../static/others/ezapp.apk';
-import { Layout, Menu, Divider, Image } from 'antd';
+import { Layout, Menu, Divider, Image,Avatar } from 'antd';
 import { Link } from 'react-router-dom';
 import {
     LaptopOutlined, MailOutlined, LinkedinOutlined,GithubOutlined, ZhihuOutlined, ContactsOutlined, SolutionOutlined,
@@ -12,18 +12,21 @@ import Blog from './Blog';
 import Aboutme from './Aboutme';
 import Projects from './Projects';
 import MsgBoard from './MsgBoard';
+import ezlogo2 from '../static/img/ez.png';
 
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
 
 class Home extends React.Component {
+    
     state = {
-        collapsed: false,
+        collapsed: window.innerWidth<500?true:false,
         aboutShow:'block',
         projectShow:'none',
         blogShow:'none',
         msgboardShow:'none',
-        visualShow:'none'
+        visualShow:'none',
+        screenHeight:window.outerHeight
     };
 
     onCollapse = collapsed => {
@@ -79,12 +82,15 @@ class Home extends React.Component {
     }
 
     render() {
+        
         return (
-            <Layout id='layout001'>
+            <Layout id='layout001' style={{minHeight:this.state.screenHeight}}>
                 {/* Side Bar */}
                 <Sider collapsible collapsed={this.state.collapsed} onCollapse={this.onCollapse} reverseArrow>
                     <div style={{ height: '64px', textAlign: 'center' }}>
-                        <Link to='/' className='color-beige ecllipsis' style={{ display: 'inline-block', marginTop: '12px', fontSize: '1.5em' }}>EZ</Link>
+                        <Link to='/' className='color-beige ecllipsis' style={{ display: 'inline-block', marginTop: '12px', fontSize: '1.5em' }}>
+                            <Avatar src={ezlogo2} />EZ
+                        </Link>
                     </div>
                     <Image src={sidephoto} alt="" width="90%" />
                     <Divider style={{ width: '80%', color: 'beige' }}>Ervin</Divider>

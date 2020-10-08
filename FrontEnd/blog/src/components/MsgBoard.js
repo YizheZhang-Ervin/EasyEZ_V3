@@ -1,9 +1,9 @@
 import React from 'react';
 import axios from 'axios';
-import { SmileTwoTone, PlusOutlined } from '@ant-design/icons';
+import { IdcardOutlined, PlusOutlined } from '@ant-design/icons';
 import { List, Drawer, Form, Button, Col, Row, Input, message } from 'antd';
 
-const msgApi = 'http://127.0.0.1:8000';
+// const msgApi = 'http://127.0.0.1:8000';
 
 const headers = {
     'Content-Type': 'application/json',
@@ -67,7 +67,7 @@ class MsgBoard extends React.Component {
             <div style={{ display: this.props.msgboardShow }}>
                 <>
                     <Button style={{ margin: '2%' }} type="ghost" onClick={this.showDrawer}><PlusOutlined /> New message</Button>
-                    <Drawer title="Create a message" width={720} onClose={this.onClose} visible={this.state.visible} bodyStyle={{ paddingBottom: 80 }}
+                    <Drawer title="Create a message" width="35%" onClose={this.onClose} visible={this.state.visible} bodyStyle={{ paddingBottom: 80 }}
                         footer={
                             <div style={{ textAlign: 'right' }}>
                                 <Button onClick={this.onClose} style={{ marginRight: 8 }}>Cancel</Button>
@@ -85,8 +85,8 @@ class MsgBoard extends React.Component {
                             </Row>
                             <Row gutter={16}>
                                 <Col span={24}>
-                                    <Form.Item name="tags" label="tags" rules={[{ required: true, message: 'please enter tags(<7 words)' },]}>
-                                        <Input name='tags' rows={4} placeholder="please enter tags(<7 words)" onChange={this.handleChange} value={this.state.tags}/>
+                                    <Form.Item name="tags" label="tags" rules={[{ required: true, message: 'please enter tags' },]}>
+                                        <Input name='tags' rows={4} placeholder="please enter tags" onChange={this.handleChange} value={this.state.tags}/>
                                     </Form.Item>
                                 </Col>
                             </Row>
@@ -105,7 +105,7 @@ class MsgBoard extends React.Component {
                     dataSource={this.state.msgs} 
                     renderItem={item => (
                         <List.Item key={item.time} actions='' extra={<div>{item.time.substr(0, 10)},{item.time.substr(11, 8)}</div>}>
-                            <List.Item.Meta avatar={<SmileTwoTone />} title={item.name} description={item.tags} />{item.content}
+                            <List.Item.Meta avatar={<IdcardOutlined />} title={item.name} description={item.tags} />{item.content}
                         </List.Item>
                     )}
                 />

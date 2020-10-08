@@ -1,5 +1,6 @@
-import { Button, Popover } from 'antd';
+import { Button, Popover,Avatar } from 'antd';
 import React from 'react';
+import ezlogo from '../static/img/ez-light.png';
 
 const content = (
     <center>Welcome to my Website.
@@ -9,11 +10,15 @@ const content = (
   );
 
 class Welcome extends React.Component {
+
+    state ={
+        rightDistance:window.innerWidth<500?'0%':'15%'
+    }
     render() {
         return (
             <div>
-                <header className="color-beige welcome-header">Easy-EZ</header>
-                <main className='color-beige welcome-main'>
+                <header className="color-beige welcome-header"><Avatar src={ezlogo} />Easy-EZ</header>
+                <main className='color-beige welcome-main' style={{right:this.state.rightDistance}}>
                     <h1 className='color-beige'>Hi, I am Yizhe Zhang</h1>
                     <p >A Front End & Full Stack Developer</p>
                     <Popover content={content} title="Hi!">

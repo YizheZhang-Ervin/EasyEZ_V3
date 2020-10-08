@@ -22,7 +22,7 @@ class Msg(models.Model):
     mid = models.AutoField(primary_key=True)
     time = models.DateTimeField(auto_now=True)
     name = models.CharField(max_length=50, verbose_name='username', editable=True)
-    tags = models.CharField(max_length=7, verbose_name='tags', editable=True)
+    tags = models.CharField(max_length=30, verbose_name='tags', editable=True)
     content = models.TextField()
 
     def __str__(self):
