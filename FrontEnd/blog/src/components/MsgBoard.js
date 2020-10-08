@@ -40,12 +40,12 @@ class MsgBoard extends React.Component {
     }
 
     getValue(){
-        axios.get(`${msgApi}/api/msg/`)
+        axios.get(`/api/msg/`)
             .then(res => {this.setState({msgs: res.data});});
     }
 
     postValue(){
-        axios.post(`${msgApi}/api/msg/`,{"name":this.state.name,"tags":this.state.tags,"content":this.state.msg},{headers:headers})
+        axios.post(`/api/msg/`,{"name":this.state.name,"tags":this.state.tags,"content":this.state.msg},{headers:headers})
             .then(this.getValue());
     }
 

@@ -11,7 +11,7 @@ class Blog extends React.Component {
     }
 
     componentDidMount() {
-        axios.get(`${blogApi}/api/blog/`)
+        axios.get(`/api/blog/`)
             .then(res => {
                 this.setState(
                     {
