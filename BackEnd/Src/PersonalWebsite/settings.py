@@ -104,8 +104,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = ( os.path.join('static'), )
-STATIC_ROOT = ''
+if not DEBUG:
+    # use to collect static files if use 'python manage.py collectstatic' when deploys
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+else:
+    # use to collect static files when deploys it
+    STATICFILES_DIRS = [
+        os.path.join(BASE_DIR, 'static'),
+    ]
 
 ALLOWED_HOSTS = ['*']
 
