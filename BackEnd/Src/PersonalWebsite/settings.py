@@ -7,7 +7,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'z2i*w*%%w5+($g7ev1#=p7pmujz^of22td4dan_@++dr(a1jt^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # Application definition
 
@@ -40,7 +40,7 @@ ROOT_URLCONF = 'PersonalWebsite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['Src/static'],
+        'DIRS': ['static'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
