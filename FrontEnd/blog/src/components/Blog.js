@@ -1,9 +1,10 @@
 import React from 'react';
 import axios from 'axios';
-import { List } from 'antd';
-import { CrownTwoTone } from '@ant-design/icons';
+import { List,Avatar } from 'antd';
+import ezlogo2 from '../static/img/ez.png';
 
-// const blogApi = 'http://127.0.0.1:8000';
+// const blogApi = 'http://127.0.0.1:8000/api/blog/';
+const blogApi = '/api/blog/'
 
 class Blog extends React.Component {
     state = {
@@ -11,7 +12,7 @@ class Blog extends React.Component {
     }
 
     componentDidMount() {
-        axios.get(`/api/blog/`)
+        axios.get(blogApi)
             .then(res => {
                 this.setState(
                     {
@@ -31,7 +32,7 @@ class Blog extends React.Component {
             renderItem={item => (
                 <List.Item key={item.nid} actions='' extra=''>
                     <List.Item.Meta
-                        avatar={<CrownTwoTone />}
+                        avatar={<Avatar src={ezlogo2} />}
                         title={item.main_title}
                         description={item.sub_title}
                     />

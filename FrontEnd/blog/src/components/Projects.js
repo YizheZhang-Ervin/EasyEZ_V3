@@ -56,7 +56,26 @@ class Projects extends React.Component {
                             <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/IMISCloud'>Github</a></p>
                             <Image src={imiscloud}></Image>
                         </Panel>
-                        <Panel className='font-bold' header="Gold Visualization System" key="p11">
+                        <Panel className='font-bold' header="Home Rent App" key="p11">
+                            <p className='font-normal'>Jan 2020 - Apr 2020</p>
+                            <p className='font-normal'>Angular, Express, MongoDB, Ng-Zorro</p>
+                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/MeteorHome'>Github</a></p>
+                            <Image src={homesearch}></Image>
+                        </Panel>
+                        <Panel className='font-bold' header="Spreadsheet" key="p10">
+                            <p className='font-normal'>HTML/CSS/JS</p>
+                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/WebAppDevelop'>Github</a></p>
+                            <Image src={excel}></Image>
+                        </Panel>
+                        <Panel className='font-bold' header="Long Page Application" key="p9">
+                            <p className='font-normal'>HTML/CSS/JS</p>
+                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/WebAppDevelop'>Github</a></p>
+                            <Image src={spa}></Image>
+                        </Panel>
+                        <Panel className='font-bold' header="MA Education Data Analysis" key="p8">
+                            <p className='font-normal'>Python(Jupyter Notebook, Numpy, Pandas, Scipy, Sklearn, Matplotlib)</p>
+                        </Panel>
+                        <Panel className='font-bold' header="Gold Visualization System" key="p7">
                             <p className='font-normal'>Mar 2020 - Apr 2020</p>
                             <p className='font-normal'>Tornado, Bootstrap, Sqlite</p>
                             <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/BEA'>Github</a></p>
@@ -64,41 +83,22 @@ class Projects extends React.Component {
                             <br/>
                             <Image src={pfas}></Image>
                         </Panel>
-                        <Panel className='font-bold' header="Personal Website V3.0" key="p10">
+                        <Panel className='font-bold' header="Personal Website V3.0" key="p6">
                             <p className='font-normal'>Oct 2020 - Now</p>
                             <p className='font-normal'>Angular, Django, Sqlite</p>
                             <Image src={easyv3}></Image>
                         </Panel>
-                        <Panel className='font-bold' header="Personal Website V2.0" key="p9">
+                        <Panel className='font-bold' header="Personal Website V2.0" key="p5">
                             <p className='font-normal'>Mar 2020 - Oct 2020</p>
                             <p className='font-normal'>Bootstrap, Django, Mysql</p>
                             <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/EasyEZ_V2'>Github</a></p>
                             <Image src={easyv2}></Image>
                         </Panel>
-                        <Panel className='font-bold' header="Personal Website V1.0" key="p8">
+                        <Panel className='font-bold' header="Personal Website V1.0" key="p4">
                             <p className='font-normal'>Jan 2020 - Mar 2020</p>
                             <p className='font-normal'>Django, Mysql</p>
                             <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/EasyEZ_V1'>Github</a></p>
                             <Image src={easyv1}></Image>
-                        </Panel>
-                        <Panel className='font-bold' header="Home Rent App" key="p7">
-                            <p className='font-normal'>Jan 2020 - Apr 2020</p>
-                            <p className='font-normal'>Angular, Express, MongoDB, Ng-Zorro</p>
-                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/MeteorHome'>Github</a></p>
-                            <Image src={homesearch}></Image>
-                        </Panel>
-                        <Panel className='font-bold' header="Spreadsheet" key="p6">
-                            <p className='font-normal'>HTML/CSS/JS</p>
-                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/WebAppDevelop'>Github</a></p>
-                            <Image src={excel}></Image>
-                        </Panel>
-                        <Panel className='font-bold' header="Long Page Application" key="p5">
-                            <p className='font-normal'>HTML/CSS/JS</p>
-                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/WebAppDevelop'>Github</a></p>
-                            <Image src={spa}></Image>
-                        </Panel>
-                        <Panel className='font-bold' header="MA Education Data Analysis" key="p4">
-                            <p className='font-normal'>Python(Jupyter Notebook, Numpy, Pandas, Scipy, Sklearn, Matplotlib)</p>
                         </Panel>
                     </Collapse>
                     <Divider orientation='left' ><CalendarOutlined /> 2019</Divider>

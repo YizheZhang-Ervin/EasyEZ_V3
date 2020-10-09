@@ -12,6 +12,7 @@ import Blog from './Blog';
 import Aboutme from './Aboutme';
 import Projects from './Projects';
 import MsgBoard from './MsgBoard';
+import Visualization from './Visualization';
 import ezlogo2 from '../static/img/ez.png';
 
 const { Header, Content, Footer, Sider } = Layout;
@@ -168,6 +169,7 @@ class Home extends React.Component {
                         <Projects projectShow={this.state.projectShow}></Projects>
                         <Blog blogShow={this.state.blogShow}></Blog>
                         <MsgBoard msgboardShow={this.state.msgboardShow}></MsgBoard >
+                        <Visualization visualShow={this.state.visualShow}></Visualization >
                     </Content>
                     {/* Footer */}
                     <Footer>
