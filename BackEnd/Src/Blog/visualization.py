@@ -17,11 +17,11 @@ class DBOperate:
         self.engine = engineDB
         self.table = tableName
 
-    def getDataFromAPI(self,stockNo='000001',startDate='2019-01-01',endDate='2020-10-08'):
+    def getDataFromAPI(self,stockNo='sh',startDate='2019-01-01',endDate='2020-10-08'):
         dt = ts.get_hist_data(code=stockNo,start=startDate,end=endDate)
         dt.to_sql(name=self.table,con=self.engine)
 
-    def updateDataFromAPI(self,stockNo='000001'):
+    def updateDataFromAPI(self,stockNo='sh'):
         dt = ts.get_hist_data(code=stockNo)
         dt.to_sql(name=self.table,con=self.engine,if_exists='append')
 

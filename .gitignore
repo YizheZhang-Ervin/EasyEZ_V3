@@ -233,4 +233,4 @@ dmypy.json
 .pyre/
 
 # sqlite
-.sqlite3
+# .sqlite3
