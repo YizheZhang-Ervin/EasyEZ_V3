@@ -23,7 +23,6 @@ class DBOperate:
 
     def updateDataFromAPI(self,stockNo='000001'):
         dt = ts.get_hist_data(code=stockNo)
-        dt.sort_values(by='date')
         dt.to_sql(name=self.table,con=self.engine,if_exists='append')
 
     def searchFromDB(self,sql):
@@ -37,7 +36,7 @@ class DBOperate:
 
 def getPriceVolDate(request):
     dbo = DBOperate(engine,tableName)
-    sql1 = f"SELECT date,open,close,low,high,volume FROM {tableName}"
+    sql1 = f"SELECT date,open,close,low,high,volume FROM {tableName} order by date ASC"
     data1 = dbo.searchFromDB(sql1)
     rst = []
     # for i in data1:
