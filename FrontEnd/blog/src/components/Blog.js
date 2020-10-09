@@ -24,7 +24,7 @@ class Blog extends React.Component {
 
     render() {
         return (
-            <div style={{display:this.props.blogShow}}>
+            <div style={{display:this.props.blogShow,whiteSpace:'pre'}}>
             <List
             itemLayout="vertical" size="large" pagination={{ onChange: page => {}, pageSize: 1}}
             dataSource={this.state.articles}
