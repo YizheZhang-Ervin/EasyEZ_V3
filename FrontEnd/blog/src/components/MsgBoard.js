@@ -67,7 +67,8 @@ class MsgBoard extends React.Component {
             <div style={{ display: this.props.msgboardShow }}>
                 <>
                     <Button style={{ margin: '2%' }} type="ghost" onClick={this.showDrawer}><PlusOutlined /> New message</Button>
-                    <Drawer title="Create a message" width="35%" onClose={this.onClose} visible={this.state.visible} bodyStyle={{ paddingBottom: 80 }}
+                    <Drawer title="Create a message" height="70%" onClose={this.onClose} visible={this.state.visible} bodyStyle={{ paddingBottom: 80 }}
+                        placement='bottom'
                         footer={
                             <div style={{ textAlign: 'right' }}>
                                 <Button onClick={this.onClose} style={{ marginRight: 8 }}>Cancel</Button>

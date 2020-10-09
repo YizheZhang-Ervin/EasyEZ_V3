@@ -9,16 +9,18 @@ const content = (
     </center>
   );
 
+const fontstyle1 = {left:0,right:0,margin:'auto'}
+const fontstyle2 = {right:'15%'}
 class Welcome extends React.Component {
 
     state ={
-        rightDistance:window.innerWidth<500?'0%':'15%'
+        styles:window.innerWidth<500?fontstyle1:fontstyle2
     }
     render() {
         return (
             <div>
                 <header className="color-beige welcome-header"><Avatar src={ezlogo} />Easy-EZ</header>
-                <main className='color-beige welcome-main' style={{right:this.state.rightDistance}}>
+                <main className='color-beige welcome-main' style={this.state.styles}>
                     <h1 className='color-beige'>Hi, I am Yizhe Zhang</h1>
                     <p >A Front End & Full Stack Developer</p>
                     <Popover content={content} title="Hi!">

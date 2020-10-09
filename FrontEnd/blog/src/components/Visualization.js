@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import {Button, message} from 'antd';
+import {Button, message,Card} from 'antd';
 import 'echarts/lib/chart/candlestick';
 import ReactEcharts from 'echarts-for-react';
 
@@ -56,10 +56,10 @@ class Visualization extends React.Component {
             return result;
         }
         let option = {
-            title: {
-                text: 'Shanghai Composite Index',
-                left: 'center'
-            },
+            // title: {
+            //     text: 'Shanghai Composite Index',
+            //     left: 'center'
+            // },
             tooltip: {
                 trigger: 'axis',
                 axisPointer: {
@@ -79,7 +79,7 @@ class Visualization extends React.Component {
                 }
             },
             legend: {
-                bottom:'45%',
+                top:'320em',
                 data: ['Day K', 'MA5', 'MA10', 'MA20', 'MA30']
             },
             axisPointer: {
@@ -112,15 +112,11 @@ class Visualization extends React.Component {
             },
             grid: [
                 {
-                    left: '10%',
-                    right: '10%',
-                    bottom: '55%'
+                    height:'220em'
                 },
                 {
-                    left: '10%',
-                    right: '10%',
-                    bottom: '35%',
-                    height: '10%'
+                   top:'370em',
+                   height:'80em'
                 }
             ],
             xAxis: [{
@@ -173,7 +169,7 @@ class Visualization extends React.Component {
                     show: true,
                     type: 'slider',
                     xAxisIndex: [0, 1],
-                    bottom: '25%',
+                    top: '355em',
                     start: 50,
                     end: 100
                 }
@@ -331,8 +327,19 @@ class Visualization extends React.Component {
     render() {
         return (
             <div style={{ display: this.props.visualShow, height: '100%' }}>
-                <Button href='/dbapi/update/' onClick={this.btnClick} type="ghost" style={{margin:'0.5% 1%'}}>Update Data</Button>
-                <ReactEcharts option={this.getOption()} style={{ height: '100%' }} />
+                <Card title="Shanghai Composite Index">
+                    <Card
+                    hoverable='true'
+                    style={{ marginTop: 16 }}
+                    type="inner"
+                    title="CandleStick"
+                    extra = {<Button href='/dbapi/update/' onClick={this.btnClick} type="ghost" style={{margin:'0.5% 1%'}}>Update Data</Button>}
+                    >
+                    <ReactEcharts option={this.getOption()} style={{height:'50em'}}/>
+                    </Card>
+                </Card>
+                
+                
             </div>
         )
     }
