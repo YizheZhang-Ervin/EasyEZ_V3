@@ -120,6 +120,18 @@ class Projects extends React.Component {
                             <p className='font-normal'>Axure RP</p>
                             <Image src={guess}></Image>
                         </Panel>
+                        <Panel className='font-bold' header="Douban Web" key="p0">
+                            <p className='font-normal'>Sept 2018 - Jan 2019</p>
+                            <p className='font-normal'>JSP</p>
+                        </Panel>
+                        <Panel className='font-bold' header="Little Iron Pot App" key="p00">
+                            <p className='font-normal'>Mar 2018 - Jun 2018</p>
+                            <p className='font-normal'>MIT App Inventor</p>
+                        </Panel>
+                        <Panel className='font-bold' header="Tank Battle" key="p000">
+                            <p className='font-normal'>Mar 2018 - Jun 2018</p>
+                            <p className='font-normal'>Java AWT</p>
+                        </Panel>
                     </Collapse>
                 </div>
             </div>
