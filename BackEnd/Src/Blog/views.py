@@ -6,7 +6,8 @@ from django.shortcuts import render
 
 class BlogViewSet(viewsets.ModelViewSet):
     serializer_class = BlogSerializer
-    queryset = Blog.objects.all()
+    # queryset = Blog.objects.all()
+    queryset = Blog.objects.order_by('-nid')
 
 
 class MsgViewSet(viewsets.ModelViewSet):
