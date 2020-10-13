@@ -52,8 +52,12 @@ def getPriceVolDate(request):
     return JsonResponse(rst,safe=False)
 
 def updateDate(request):
-    dbo = DBOperate(engine,tableName)
-    dbo.updateDataFromAPI()
-    # rst = {'status':'success'}
-    # return JsonResponse(rst,safe=False)
-    return redirect('/home/')
+    try:
+        dbo = DBOperate(engine,tableName)
+        dbo.updateDataFromAPI()
+    except Exception:
+        pass
+    finally:
+        # rst = {'status':'success'}
+        # return JsonResponse(rst,safe=False)
+        return redirect('/home/')
