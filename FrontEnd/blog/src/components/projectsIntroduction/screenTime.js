@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Row, Col,Image } from 'antd';
+import { Layout, Row, Col,Image,Button } from 'antd';
 import {TrophyTwoTone} from '@ant-design/icons';
 const { Header, Footer, Content } = Layout;
 const div1Style = {
@@ -43,26 +43,46 @@ const div8Style={
     paddingTop:'5em'
 }
 
+const frameStyle1 = {top:'64px',border: "none",position:'fixed',display:'block'};
+const frameStyle2 = {display:'none'};
+
 class ScreenTime extends React.Component {
     state={
-        styles:{
+        divStyle:{
             fontFamily:'cursive',
             display:this.props.stShow,
             backgroundColor:'beige',
             height:window.innerHeight
             || document.documentElement.clientHeight
             || document.body.clientHeight,
-        }
+        },
+        countFrame:true,
+        frameStyle:frameStyle2
     }
     
+    changeFrame(){
+        this.setState({
+            frameStyle:(this.state.countFrame===false)?frameStyle2:frameStyle1,
+            countFrame:!this.state.countFrame
+        })
+    }
+
     render() {
         return (
-            <div style={this.state.styles} className>
+            <div style={this.state.divStyle} className>
                 <Layout>
                     {/* header */}
-                    <Header>Screen Time</Header>
+                    <Header style={{position:'fixed',width:'100%'}}>
+                        <Button onClick={()=>this.changeFrame()} 
+                        ghost size='large' style={{float:'left',height:'64px',border:'none'}}>Prototype</Button>
+                        Screen Time App
+                    </Header>
                     {/* content */}
                     <Content>
+                        {/* iframe */}
+                        <iframe title='phone' style={this.state.frameStyle} width="300" height="700" 
+                        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FYsboooRylBRXw6cDIpsI8L%2FScreen-Time-Manager%3Fnode-id%3D14%253A1227%26scaling%3Dscale-down">
+                        </iframe>
                         {/* project */}
                         <div style={div1Style}>
                             <Row align='middle' style={{height:'100%'}}>
