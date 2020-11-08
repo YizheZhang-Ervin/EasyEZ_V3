@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.0b64d372.chunk.css",
-    "main.js": "/static/js/main.6c53603a.chunk.js",
-    "main.js.map": "/static/js/main.6c53603a.chunk.js.map",
+    "main.js": "/static/js/main.8fd7a376.chunk.js",
+    "main.js.map": "/static/js/main.8fd7a376.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0ed6e50a.js",
     "runtime-main.js.map": "/static/js/runtime-main.0ed6e50a.js.map",
     "static/css/2.220ccb42.chunk.css": "/static/css/2.220ccb42.chunk.css",
-    "static/js/2.eaeb121c.chunk.js": "/static/js/2.eaeb121c.chunk.js",
-    "static/js/2.eaeb121c.chunk.js.map": "/static/js/2.eaeb121c.chunk.js.map",
+    "static/js/2.5ea01170.chunk.js": "/static/js/2.5ea01170.chunk.js",
+    "static/js/2.5ea01170.chunk.js.map": "/static/js/2.5ea01170.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.70e18d537ee074be75ffce1aab188499.js": "/precache-manifest.70e18d537ee074be75ffce1aab188499.js",
+    "precache-manifest.2703eadb3414014d3c0723a21d381898.js": "/precache-manifest.2703eadb3414014d3c0723a21d381898.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.220ccb42.chunk.css.map": "/static/css/2.220ccb42.chunk.css.map",
     "static/css/main.0b64d372.chunk.css.map": "/static/css/main.0b64d372.chunk.css.map",
-    "static/js/2.eaeb121c.chunk.js.LICENSE.txt": "/static/js/2.eaeb121c.chunk.js.LICENSE.txt",
+    "static/js/2.5ea01170.chunk.js.LICENSE.txt": "/static/js/2.5ea01170.chunk.js.LICENSE.txt",
     "static/media/GAIQ.png": "/static/media/GAIQ.00d6936b.png",
     "static/media/GE-DA.png": "/static/media/GE-DA.60ae6547.png",
     "static/media/IBM_python.jpg": "/static/media/IBM_python.facdd5a5.jpg",
@@ -47,6 +47,7 @@
     "static/media/pfas-crs.png": "/static/media/pfas-crs.6e513b8d.png",
     "static/media/pfas.jpg": "/static/media/pfas.b787509d.jpg",
     "static/media/python3.jpg": "/static/media/python3.6fd58a07.jpg",
+    "static/media/screentime.png": "/static/media/screentime.f79f7ef6.png",
     "static/media/spa.jpg": "/static/media/spa.a074e9d0.jpg",
     "static/media/summary.png": "/static/media/summary.44a5958d.png",
     "static/media/ucla.jpg": "/static/media/ucla.facec0f4.jpg"
@@ -54,8 +55,8 @@
   "entrypoints": [
     "static/js/runtime-main.0ed6e50a.js",
     "static/css/2.220ccb42.chunk.css",
-    "static/js/2.eaeb121c.chunk.js",
+    "static/js/2.5ea01170.chunk.js",
     "static/css/main.0b64d372.chunk.css",
-    "static/js/main.6c53603a.chunk.js"
+    "static/js/main.8fd7a376.chunk.js"
   ]
 }

@@ -14,7 +14,9 @@ const fontstyle2 = {right:'15%'}
 class Welcome extends React.Component {
 
     state ={
-        styles:window.innerWidth<500?fontstyle1:fontstyle2
+        styles:(window.innerWidth
+        || document.documentElement.clientWidth
+        || document.body.clientWidth)<500?fontstyle1:fontstyle2
     }
     render() {
         return (

@@ -43,9 +43,11 @@ const data = [
         avatar: <UserOutlined />,
         content: (
             <p>
-                Proficient in full stack development of Websites.
+                Proficient in Front-End development of Websites.
                 <br />
-                Can apply mainstream frameworks such as Angular/Django to develop individual/team projects.
+                Be familiar with mainstream frameworks such as React/Angular(Front-End), Django/Express(Back-End).
+                <br />
+                Developed several individual&amp;team projects.
                 <br />
                 Good at optimizing user experience and improving project quality through data analysis.
             </p>
@@ -61,6 +63,10 @@ const data = [
                 Have Strong adaptability and can quickly integrate into the team.
                 <br />
                 Have strong learning ability and can quickly master the knowledge structure.
+                <br />
+                Love to track the latest Front-End technology.
+                <br />
+                Rigorous, neat and high-quality code style.
             </p>
         ),
     },

@@ -19,7 +19,6 @@ const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
 
 class Home extends React.Component {
-    
     state = {
         collapsed: window.innerWidth<500?true:false,
         aboutShow:'block',

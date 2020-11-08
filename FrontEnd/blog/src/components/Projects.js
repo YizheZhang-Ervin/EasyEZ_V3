@@ -13,6 +13,7 @@ import his from '../static/img/projects/his.jpg';
 import hds from '../static/img/projects/hds.jpg';
 import excel from '../static/img/projects/excel.jpg';
 import beagvs from '../static/img/projects/bea-gvs.jpg';
+import screentime from '../static/img/projects/screentime.png';
 import crs1 from '../static/img/projects/bea-gvs-crs.png';
 import crs2 from '../static/img/projects/alg-crs.png';
 import crs3 from '../static/img/projects/harrier-crs.png';
@@ -49,25 +50,31 @@ class Projects extends React.Component {
                 <div id='prj001' className='margin-97'>
                     <Divider orientation="left"><SolutionOutlined /> Projects</Divider>
                     <Divider orientation='left' ><CalendarOutlined /> 2020</Divider>
-                    <Collapse defaultActiveKey={['p12']} ghost>
-                        <Panel className='font-bold' header="IMIS Cloud Storage" key="p12">
+                    <Collapse defaultActiveKey={['p13']} ghost>
+                        <Panel className='font-bold' header="Screen Time App" key="p13">
+                            <p className='font-normal'>Sept 2020 - Nov 2020</p>
+                            <p className='font-normal'>Sketch, Wireframe, Prototype</p>
+                            <p><a rel="noopener noreferrer" href='/projects/screentime'>UX Portfolio</a></p>
+                            <Image src={screentime}></Image>
+                        </Panel>
+                        <Panel className='font-bold' header="Cloud Storage App" key="p12">
                             <p className='font-normal'>Apr 2020 - May 2020</p>
                             <p className='font-normal'>Django, Bootstrap, Sqlite</p>
                             <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/IMISCloud'>Github</a></p>
                             <Image src={imiscloud}></Image>
                         </Panel>
-                        <Panel className='font-bold' header="Home Rent App" key="p11">
+                        <Panel className='font-bold' header="Home Rent Website" key="p11">
                             <p className='font-normal'>Jan 2020 - Apr 2020</p>
                             <p className='font-normal'>Angular, Express, MongoDB, Ng-Zorro</p>
                             <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/MeteorHome'>Github</a></p>
                             <Image src={homesearch}></Image>
                         </Panel>
-                        <Panel className='font-bold' header="Spreadsheet" key="p10">
+                        <Panel className='font-bold' header="Online Spreadsheet" key="p10">
                             <p className='font-normal'>HTML/CSS/JS</p>
                             <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/WebAppDevelop'>Github</a></p>
                             <Image src={excel}></Image>
                         </Panel>
-                        <Panel className='font-bold' header="Long Page Application" key="p9">
+                        <Panel className='font-bold' header="Long Page Website" key="p9">
                             <p className='font-normal'>HTML/CSS/JS</p>
                             <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/WebAppDevelop'>Github</a></p>
                             <Image src={spa}></Image>
@@ -75,7 +82,7 @@ class Projects extends React.Component {
                         <Panel className='font-bold' header="MA Education Data Analysis" key="p8">
                             <p className='font-normal'>Python(Jupyter Notebook, Numpy, Pandas, Scipy, Sklearn, Matplotlib)</p>
                         </Panel>
-                        <Panel className='font-bold' header="Gold Visualization System" key="p7">
+                        <Panel className='font-bold' header="Gold Visualization Website" key="p7">
                             <p className='font-normal'>Mar 2020 - Apr 2020</p>
                             <p className='font-normal'>Tornado, Bootstrap, Sqlite</p>
                             <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/BEA'>Github</a></p>
@@ -120,7 +127,7 @@ class Projects extends React.Component {
                             <p className='font-normal'>Axure RP</p>
                             <Image src={guess}></Image>
                         </Panel>
-                        <Panel className='font-bold' header="Douban Web" key="p0">
+                        <Panel className='font-bold' header="Douban Website" key="p0">
                             <p className='font-normal'>Sept 2018 - Jan 2019</p>
                             <p className='font-normal'>JSP</p>
                         </Panel>
@@ -128,7 +135,7 @@ class Projects extends React.Component {
                             <p className='font-normal'>Mar 2018 - Jun 2018</p>
                             <p className='font-normal'>MIT App Inventor</p>
                         </Panel>
-                        <Panel className='font-bold' header="Tank Battle" key="p000">
+                        <Panel className='font-bold' header="Tank Battle Game" key="p000">
                             <p className='font-normal'>Mar 2018 - Jun 2018</p>
                             <p className='font-normal'>Java AWT</p>
                         </Panel>
