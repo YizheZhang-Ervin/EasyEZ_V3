@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Row, Col, Image, Button, Carousel,Collapse,Table } from 'antd';
+import { Layout, Row, Col, Image, Button, Carousel, Collapse, Table } from 'antd';
 import interviewQs from '../../static/img/projects/screenTime/interviewQs.png';
 import empathyMap from '../../static/img/projects/screenTime/empathyMap.png';
 import priorHierarchy from '../../static/img/projects/screenTime/priorHierarchy.png';
@@ -12,7 +12,7 @@ import ut2 from '../../static/img/projects/screenTime/usabilityTesting_prepare2.
 import bluesky from '../../static/img/projects/screenTime/bluesky.jpg';
 import usabilityTestingResult from '../../static/img/projects/screenTime/usabilityTestingResult.png';
 import music_xydm from '../../static/others/xydm.mp3';
-import {PlayCircleFilled,CaretRightOutlined} from '@ant-design/icons';
+import { PlayCircleFilled, CaretRightOutlined } from '@ant-design/icons';
 
 const { Panel } = Collapse;
 const { Header, Footer, Content } = Layout;
@@ -62,61 +62,61 @@ class ScreenTime extends React.Component {
         document.getElementById('phone').src = 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FYsboooRylBRXw6cDIpsI8L%2FScreen-Time-Manager%3Fnode-id%3D206%253A731%26scaling%3Dscale-down';
     }
 
-    changeMusicStatus(){
+    changeMusicStatus() {
         let music = document.getElementById('music');
-        if(music.paused){
+        if (music.paused) {
             music.play();
-        }else{
+        } else {
             music.pause();
         }
     }
 
     render() {
-        const tableColumn =[{title:'Module',dataIndex: 'module',key:'module'},
-                            {title:'Sub Module',dataIndex: 'submodule',key:'submodule'},
-                            {title:'User Need / Function',dataIndex: 'need',key:'need'}];
+        const tableColumn = [{ title: 'Module', dataIndex: 'module', key: 'module' },
+        { title: 'Sub Module', dataIndex: 'submodule', key: 'submodule' },
+        { title: 'User Need / Function', dataIndex: 'need', key: 'need' }];
         const tableData = [{
-                key:'1',
-                module:'Home',
-                submodule:'Daily Quotes',
-                need:'Encouragement'
-            },{
-                key:'2',
-                module:'Home',
-                submodule:'Charts',
-                need:'Notification'
-            },{
-                key:'3',
-                module:'Home',
-                submodule:'Tools',
-                need:'Help decision'
-                
-            },{
-                key:'4',
-                module:'Home',
-                submodule:'Limit app usage',
-                need:'Limit time'
-            },{
-                key:'5',
-                module:'Control',
-                submodule:'-',
-                need:'Limit time'
-            },{
-                key:'6',
-                module:'Friends',
-                submodule:'Lock screen battle',
-                need:'supervision'
-            },{
-                key:'6',
-                module:'Friends',
-                submodule:'Rankings',
-                need:'Encouragement'
-            },{
-                key:'6',
-                module:'Me',
-                submodule:'Building',
-                need:'Encouragement'
-            }
+            key: '1',
+            module: 'Home',
+            submodule: 'Daily Quotes',
+            need: 'Encouragement'
+        }, {
+            key: '2',
+            module: 'Home',
+            submodule: 'Charts',
+            need: 'Notification'
+        }, {
+            key: '3',
+            module: 'Home',
+            submodule: 'Tools',
+            need: 'Help decision'
+
+        }, {
+            key: '4',
+            module: 'Home',
+            submodule: 'Limit app usage',
+            need: 'Limit time'
+        }, {
+            key: '5',
+            module: 'Control',
+            submodule: '-',
+            need: 'Limit time'
+        }, {
+            key: '6',
+            module: 'Friends',
+            submodule: 'Lock screen battle',
+            need: 'supervision'
+        }, {
+            key: '6',
+            module: 'Friends',
+            submodule: 'Rankings',
+            need: 'Encouragement'
+        }, {
+            key: '6',
+            module: 'Me',
+            submodule: 'Building',
+            need: 'Encouragement'
+        }
         ];
         return (
             <div style={this.state.divStyle}>
@@ -127,9 +127,9 @@ class ScreenTime extends React.Component {
                             ghost size='large' style={{ float: 'left', height: '64px', border: 'none' }}>
                             Prototype
                         </Button>
-                        <audio id='music' style={{display:'fixed',zIndex:'10'}} src={music_xydm} loop autoplay='true'></audio>
-                        <Button onClick={()=>this.changeMusicStatus()} title='Play/Pause' 
-                            icon={<PlayCircleFilled spin />} ghost size='large' style={{border:'none',height: '64px',float:'right'}}>
+                        <audio id='music' style={{ display: 'fixed', zIndex: '10' }} src={music_xydm} loop autoplay='true'></audio>
+                        <Button onClick={() => this.changeMusicStatus()} title='Play/Pause'
+                            icon={<PlayCircleFilled spin />} ghost size='large' style={{ border: 'none', height: '64px', float: 'right' }}>
                         </Button>
                     </Header>
                     {/* content */}
@@ -228,7 +228,7 @@ class ScreenTime extends React.Component {
                                 </Col>
                             </Row>
                         </div>
-                        {/* steps to solve problem */}
+                        {/* user interview */}
                         <div style={divStyleOdd}>
                             <Row align='middle' justify='center'>
                                 <Col span={12}>
@@ -250,7 +250,7 @@ class ScreenTime extends React.Component {
                                 </Col>
                             </Row>
                             {/* empathy map & POV */}
-                            <Row align='middle' justify='center' style={{padding:'3% 0'}}>
+                            <Row align='middle' justify='center' style={{ padding: '3% 0' }}>
                                 <Col span={7}>
                                     <Image src={empathyMap}></Image>
                                 </Col>
@@ -258,35 +258,35 @@ class ScreenTime extends React.Component {
                                     <h1 style={{ fontSize: '2em' }}>POV statements</h1>
                                     <Collapse defaultActiveKey={['1']} accordion='true' ghost='true' style={textLeft}>
                                         <Panel header="Statement 1" key="1">
-                                        <p style={textLeft}>
+                                            <p style={textLeft}>
                                                 <b>A user who</b> is a student<br />
                                                 <b>needs</b> to be supervised<br />
                                                 <b>so they can</b> concentrate on learning and don't play with mobile phones
                                             </p>
                                         </Panel>
                                         <Panel header="Statement 2" key="2">
-                                        <p style={textLeft}>
+                                            <p style={textLeft}>
                                                 <b>A user</b> who is a student<br />
                                                 <b>needs</b> movtivation<br />
                                                 <b>so they can</b> be encouraged not playing mobile phone
                                             </p>
                                         </Panel>
                                         <Panel header="Statement 3" key="3">
-                                        <p style={textLeft}>
+                                            <p style={textLeft}>
                                                 <b>A user</b> who is a student<br />
                                                 <b>needs</b> an time controller<br />
                                                 <b>so they can</b> limit usage time of different kinds of apps
                                             </p>
                                         </Panel>
                                         <Panel header="Statement 4" key="4">
-                                        <p style={textLeft}>
+                                            <p style={textLeft}>
                                                 <b>A user</b> who is a working person<br />
                                                 <b>needs</b> time notification<br />
                                                 <b>so they can</b> reduce future screen time according to the time spent
                                             </p>
                                         </Panel>
                                         <Panel header="Statement 5" key="5">
-                                        <p style={textLeft}>
+                                            <p style={textLeft}>
                                                 <b>A user</b> who is a working person<br />
                                                 <b>needs</b> time-saving tools<br />
                                                 <b>so they can</b> make quick decisions for trifles without wasting time on phone
@@ -318,8 +318,8 @@ class ScreenTime extends React.Component {
                                     <h1 style={{ fontSize: '2em' }}>Hand Sketches</h1>
                                     <div style={textLeft}>
                                         <p>After confirming the user need,
-                                            I designed five pain points modules (Visualization / Control / Supervision / Rankings / Tools) 
-                                            by a low cost, fast and simple way - hand sketch.
+                                        I designed five pain points modules (Visualization / Control / Supervision / Rankings / Tools)
+                                        by a low cost, fast and simple way - hand sketch.
                                         </p>
                                         <p>And in this sketch, I mainly focused on page layout, and ignore complex details.</p>
                                         <p>At first, I have put forward a variety of options for the two issues:</p>
@@ -348,7 +348,7 @@ class ScreenTime extends React.Component {
                                         <p>Hence, I adjusted the following steps:</p>
                                         <ol>
                                             <li>Merged visualization module and control module into Home module, which helps reduce user operating steps</li>
-                                            <li>Simplified tools module, and merged it into Home module,it brought pleasure to serious interface, break the conventional logic</li>
+                                            <li>Simplified tools module, and merged it into Home module, it brought pleasure to serious interface, break the conventional logic</li>
                                             <li>Added a new lock screen module for single use</li>
                                             <li>Merged Supervision/rankings into friends module</li>
                                             <li>Deleted the top-right "Me" icon, and add it to navigation bar</li>
@@ -410,16 +410,36 @@ class ScreenTime extends React.Component {
                                     <h1>Test Preparation</h1>
                                     <div style={textLeft}>
                                         <p>After completed the prototype, I started to do usability testing.
-                                            The test plan mainly included test objectives, scenarios, tasks, etc.
+                                        The test plan mainly included test objectives, scenarios, tasks, etc.
                                             <br />I set the following scenarios:
                                         </p>
-                                        <ul>
-                                            <li>Look at the total/percentage usage time of all apps and restrict the time usage of some apps (Limit Time+Notification)</li>
-                                            <li>Do lock screen battle with your friends and supervise each other (Supervision)</li>
-                                            <li>Use the points you win to build buildings and take a look at rankings (Encouragement)</li>
-                                            <li>Lock screen by yourself when you don't want battle (limit time)</li>
-                                            <li>Use dice or coin to help you make a quick decision (Help decision)</li>
-                                    </ul>
+                                        <Collapse defaultActiveKey={['1']} accordion='true' ghost='true' style={textLeft}>
+                                            <Panel header="Scenario 1" key="1">
+                                                <p style={textLeft}>
+                                                    Look at the total/percentage usage time of all apps and restrict the time usage of some apps <br/>(Limit Time+Notification)
+                                                </p>
+                                            </Panel>
+                                            <Panel header="Scenario 2" key="2">
+                                                <p style={textLeft}>
+                                                    Do lock screen battle with your friends and supervise each other(Supervision)
+                                                </p>
+                                            </Panel>
+                                            <Panel header="Scenario 3" key="3">
+                                                <p style={textLeft}>
+                                                    Use the points you win to build buildings and take a look at rankings <br/>(Encouragement)
+                                                </p>
+                                            </Panel>
+                                            {/* <Panel header="Scenario 4(not test)" key="4">
+                                                <p style={textLeft}>
+                                                    Lock screen by yourself when you don't want battle <br/>(Limit time)
+                                                </p>
+                                            </Panel>
+                                            <Panel header="Scenario 5(not test)" key="5">
+                                                <p style={textLeft}>
+                                                    Use dice or coin to help you make a quick decision <br/>(Help decision)
+                                                </p>
+                                            </Panel> */}
+                                        </Collapse>
                                     </div>
                                 </Col>
                             </Row>
@@ -428,11 +448,11 @@ class ScreenTime extends React.Component {
                                 <Col span={7}>
                                     <Image src={ut2} width='90%'></Image>
                                 </Col>
-                                <Col span={8} style={{padding:'3% 0'}}>
+                                <Col span={8} style={{ padding: '3% 0' }}>
                                     <h1>Running Usability Tests</h1>
                                     <p style={textLeft}>
-                                    The running test adopts a standard process:<br/>
-                                    Introduce the app to users, Start recording, Ask user information related questions, 
+                                        The running test adopts a standard process:<br />
+                                    Introduce the app to users, Start recording, Ask user information related questions,
                                     Do scenario tasks, feedback scoring (Likert scale), conclusion.
                                     </p>
                                 </Col>
@@ -459,17 +479,17 @@ class ScreenTime extends React.Component {
                             <Button onClick={() => this.changeFrame()} type='dashed' title='App Prototype' size='large' style={{ color: 'black' }} icon={<CaretRightOutlined />}>
                                 Try Prototype
                             </Button>
-                            <br/>
+                            <br />
                             <Row align='middle' justify='center'>
                                 <Col span={15} style={textLeft}>
                                     <ul>
-                                        <li>To sum up, I obtain five main User Need from user interview, <br/>
+                                        <li>To sum up, I obtain five main User Need from user interview, <br />
                                             including <b>Help decision, Encouragement, Supervision, Limit time and Notification</b>.
                                         </li>
-                                        <br/>
+                                        <br />
                                         <li>The final solution is as follows:</li>
                                     </ul>
-                                    <Table columns={tableColumn} dataSource={tableData} scroll={{ y: 150}}/>
+                                    <Table columns={tableColumn} dataSource={tableData} scroll={{ y: 150 }} />
                                 </Col>
                             </Row>
                             <Row align='middle' justify='center'>
@@ -485,8 +505,8 @@ class ScreenTime extends React.Component {
                                     <h1>What could be improved</h1>
                                     <ul style={textLeft}>
                                         <li>Some of the interface elements are not clear enough, it can be changed.</li>
-                                        <li>The part which is difficult to test is tools, because each user consider it's a funny design. 
-                                            But I can't figure out user like virtual coin or dice or a Roulette.</li>
+                                        <li>The part which is difficult to test is tools, because users all consider it's a funny design.
+                                            But I can't figure out whether it’s really effective and whether user like virtual coin or dice or a roulette by prototype.</li>
                                     </ul>
                                 </Col>
                             </Row>
@@ -503,7 +523,7 @@ class ScreenTime extends React.Component {
                                     <ul style={textLeft}>
                                         <li>Do research on battle related feature, and user favourite battle mode(single/1V1/team battle).</li>
                                         <li>Add more encouragement feature.<br />
-                                            For example, lock time points can not only be used to exchange buildings, 
+                                            For example, lock time points can not only be used to exchange buildings,
                                             but also be used to go shopping (virtual props/ real goods).
                                         </li>
                                     </ul>
