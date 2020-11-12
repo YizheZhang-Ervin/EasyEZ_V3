@@ -222,7 +222,9 @@ class ScreenTime extends React.Component {
                             <Row align='middle' justify='center'>
                                 <Col span={15}>
                                     <h1 style={{ fontSize: '2em' }}>The User Problems</h1>
-                                    <h1 style={textLeft}>Usually, people can't help playing mobile phone due to the attraction of a variety of information, like news, videos, games,etc.
+                                    <h1 style={textLeft}>Usually, people can't help playing mobile phone 
+                                    due to the attraction of a variety of information, like news, videos, games,etc. 
+                                    And they can’t efficiently manage their screen time.
                                     Because of this, People often delay or miss events and plans.
                                 </h1>
                                 </Col>
@@ -301,7 +303,7 @@ class ScreenTime extends React.Component {
                                     <Image src={priorHierarchy}></Image>
                                 </Col>
                                 <Col span={8}>
-                                    <h1 style={{ fontSize: '2em' }}>Pioritizing Pain Points</h1>
+                                    <h1 style={{ fontSize: '2em' }}>Prioritizing Pain Points</h1>
                                     <ul style={textLeft}>
                                         <li>Help decision</li>
                                         <li>Encouragement</li>
@@ -452,7 +454,7 @@ class ScreenTime extends React.Component {
                                     <h1>Running Usability Tests</h1>
                                     <p style={textLeft}>
                                         The running test adopts a standard process:<br />
-                                    Introduce the app to users, Start recording, Ask user information related questions,
+                                    Introduce the app to users, Start recording, Ask demographic related questions,
                                     Do scenario tasks, feedback scoring (Likert scale), conclusion.
                                     </p>
                                 </Col>
@@ -504,7 +506,7 @@ class ScreenTime extends React.Component {
                                 <Col span={8}>
                                     <h1>What could be improved</h1>
                                     <ul style={textLeft}>
-                                        <li>Some of the interface elements are not clear enough, it can be changed.</li>
+                                        <li>Some of the elements are not clear enough, it can be changed.</li>
                                         <li>The part which is difficult to test is tools, because users all consider it's a funny design.
                                             But I can't figure out whether it’s really effective and whether user like virtual coin or dice or a roulette by prototype.</li>
                                     </ul>
@@ -523,7 +525,7 @@ class ScreenTime extends React.Component {
                                     <ul style={textLeft}>
                                         <li>Do research on battle related feature, and user favourite battle mode(single/1V1/team battle).</li>
                                         <li>Add more encouragement feature.<br />
-                                            For example, lock time points can not only be used to exchange buildings,
+                                            For example, lock time points can not only be used to build buildings,
                                             but also be used to go shopping (virtual props/ real goods).
                                         </li>
                                     </ul>
