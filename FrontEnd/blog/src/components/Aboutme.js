@@ -18,29 +18,32 @@ import self from '../static/img/summary.png';
 
 
 const { Panel } = Collapse;
-const techs = [
+const techsDev = [
     'Progamming Language: Python, SQL, Java',
-    'Front End: HTML/CSS/SASS, JavaScript/TypeScript, AJAX',
+    'FrontEnd Language: HTML / CSS / SASS, JavaScript / TypeScript, AJAX',
     'FrontEnd Framework: Angular, React, Vue, Bootstrap, Antd, Ng-zorro',
     'BackEnd Framework: Django, Tornado, Flask, Express(Node.js), Meteor(Node.js)',
     'Database: Sqlite, MS SqlServer, Mysql, Oracle, PostgreSql, MongoDB',
-    'BI: Power BI, Tableau, SPSS, SSIS/SSAS/SSRS',
-    'ML/AI: Tensorflow, Keras',
-    'Big Data: Hadoop, Spark, Scala, Kafka',
-    'OS: Windows, Linux',
-    'MultiMedia: Corel VideoStudio, PhotoShop, Adobe Flash, Adobe Audition',
-    'DevOps: Docker, K8S, AWS, git, postman',
-    'PM: Office, Figma, Axure RP, Adobe XD, Mind Manager',
-    'Games: Unity, Unreal'
+    'DevOps: Docker, K8S, AWS, Git, Postman',
+    'Testing: Selenium',
+    'GUI/Game: Tkinter, Pyqt, Pygame',
+    'Games: Unity, Unreal',
+    'OS: Windows, Linux'
 ];
 
-const pythons = [
-    'Python Data: Numpy, Pandas, Scipy, Sklearn, Matplotlib, Seaborn, Pyecharts',
-    'Python Finance: mplfinance, investpy, trendet, pynance',
-    'Python GUI/Game: Tkinter, Pyqt, Pygame',
-    'Python Crawler: Requests+BeautifulSoup, Scrapy+Selenium',
-    'Python Testing: Selenium'
-];
+const techsData = [
+    'Data Crawler: Requests+BeautifulSoup, Scrapy+Selenium',
+    'Data Process: Numpy, Pandas, Scipy, Sklearn, Matplotlib, Seaborn, Pyecharts',
+    'Business Intelligence: Power BI, Tableau, SPSS, SSIS/SSAS/SSRS',
+    'Big Data: Hadoop, Spark, Scala, Kafka',
+    'Machine Learning / Artificial Intelligence: Tensorflow, Keras',
+    'Finance Data: Mplfinance, Investpy, Trendet, Pynance'
+]
+
+const techsOther = [
+    'MultiMedia: Corel VideoStudio, PhotoShop, Adobe Flash, Adobe Audition',
+    'PM: Office, Figma, Axure RP, Adobe XD, Mind Manager'
+]
 
 const data = [
     {
@@ -102,8 +105,9 @@ class Aboutme extends React.Component {
                 <div id='tng001' className='margin-97'>
                     <Divider orientation="left"><ConsoleSqlOutlined /> Technology Stack</Divider>
                     <List
+                        header='Development:'
                         bordered
-                        dataSource={techs}
+                        dataSource={techsDev}
                         renderItem={item => (
                             <List.Item>
                                 <Typography.Text mark>{item.split(':')[0]}:</Typography.Text> {item.split(':')[1]}
@@ -111,9 +115,19 @@ class Aboutme extends React.Component {
                         )}
                     />
                     <List
-                        header='*Python Libs:'
+                        header='Data:'
                         bordered
-                        dataSource={pythons}
+                        dataSource={techsData}
+                        renderItem={item => (
+                            <List.Item>
+                                <Typography.Text mark>{item.split(':')[0]}:</Typography.Text> {item.split(':')[1]}
+                            </List.Item>
+                        )}
+                    />
+                    <List
+                        header='Other:'
+                        bordered
+                        dataSource={techsOther}
                         renderItem={item => (
                             <List.Item>
                                 <Typography.Text mark>{item.split(':')[0]}:</Typography.Text> {item.split(':')[1]}
