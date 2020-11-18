@@ -51,6 +51,12 @@ class Projects extends React.Component {
                     <Divider orientation="left"><SolutionOutlined /> Projects</Divider>
                     <Divider orientation='left' ><CalendarOutlined /> 2020</Divider>
                     <Collapse defaultActiveKey={['p13']} ghost>
+                        <Panel className='font-bold' header="EGGroup" key="p14">
+                            <p className='font-normal'>Oct 2020 - Future</p>
+                            <p className='font-normal'>Vue, Express, Mysql, Antd</p>
+                            <p><a rel="noopener noreferrer" href='#'>Website</a></p>
+                            {/* <Image src={}></Image> */}
+                        </Panel>
                         <Panel className='font-bold' header="Screen Time App" key="p13">
                             <p className='font-normal'>Sept 2020 - Nov 2020</p>
                             <p className='font-normal'>Sketch, Wireframe, Prototype</p>
