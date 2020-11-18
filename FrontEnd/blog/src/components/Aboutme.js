@@ -26,8 +26,7 @@ const techsDev = [
     'Database: Sqlite, MS SqlServer, Mysql, Oracle, PostgreSql, MongoDB',
     'DevOps: Docker, K8S, AWS, Git, Postman',
     'Testing: Selenium',
-    'GUI/Game: Tkinter, Pyqt, Pygame',
-    'Games: Unity, Unreal',
+    'GUI/Game: Unity, Unreal, Tkinter, Pyqt, Pygame',
     'OS: Windows, Linux'
 ];
 
