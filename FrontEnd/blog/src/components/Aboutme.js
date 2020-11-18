@@ -19,18 +19,23 @@ import self from '../static/img/summary.png';
 
 const { Panel } = Collapse;
 const techs = [
-    'Progamming Language: Python, Sql, HTML/CSS/JS/TS',
-    'Front End: React, Angular, Bootstrap, Antd, Ng-zorro',
-    'Back End: Django, Tornado, Flask, Express(Node.js)',
+    'Progamming Language: Python, SQL, Java',
+    'Front End: HTML/CSS/SASS, JavaScript/TypeScript, AJAX',
+    'FrontEnd Framework: Angular, React, Vue, Bootstrap, Antd, Ng-zorro',
+    'BackEnd Framework: Django, Tornado, Flask, Express(Node.js), Meteor(Node.js)',
     'Database: Sqlite, MS SqlServer, Mysql, Oracle, PostgreSql, MongoDB',
+    'BI: Power BI, Tableau, SPSS, SSIS/SSAS/SSRS',
+    'ML/AI: Tensorflow, Keras',
+    'Big Data: Hadoop, Spark, Scala, Kafka',
     'OS: Windows, Linux',
-    'Data: Hadoop, Spark, Scala, Tensorflow, Keras, Power BI, Tableau, SPSS, SSIS/SSAS/SSRS',
     'MultiMedia: Corel VideoStudio, PhotoShop, Adobe Flash, Adobe Audition',
-    'Tools: Git, Postman, Office, Axure RP, Adobe XD, Mind Manager',
+    'DevOps: Docker, K8S, AWS, git, postman',
+    'PM: Office, Figma, Axure RP, Adobe XD, Mind Manager',
+    'Games: Unity, Unreal'
 ];
 
 const pythons = [
-    'Python Data: Numpy, Pandas, Scipy, Sklearn, matplotlib, pyecharts',
+    'Python Data: Numpy, Pandas, Scipy, Sklearn, Matplotlib, Seaborn, Pyecharts',
     'Python Finance: mplfinance, investpy, trendet, pynance',
     'Python GUI/Game: Tkinter, Pyqt, Pygame',
     'Python Crawler: Requests+BeautifulSoup, Scrapy+Selenium',
@@ -45,7 +50,7 @@ const data = [
             <p>
                 Proficient in Front-End development of Websites.
                 <br />
-                Be familiar with mainstream frameworks such as React/Angular(Front-End), Django/Express(Back-End).
+                Be familiar with mainstream frameworks such as React/Angular/Vue(Front-End), Django/Express(Back-End).
                 <br />
                 Developed several individual&amp;team projects.
                 <br />
