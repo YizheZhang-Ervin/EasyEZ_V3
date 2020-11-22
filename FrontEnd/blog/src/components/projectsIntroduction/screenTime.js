@@ -41,7 +41,7 @@ const frameStyle2 = { display: 'none' };
 class ScreenTime extends React.Component {
     state = {
         divStyle: {
-            fontFamily: 'cursive',
+            fontFamily: 'times, Verdana,Helvetica, Arial, sans-serif',
             display: this.props.stShow,
             height: window.innerHeight
                 || document.documentElement.clientHeight
@@ -107,12 +107,12 @@ class ScreenTime extends React.Component {
             submodule: 'Lock screen battle',
             need: 'supervision'
         }, {
-            key: '6',
+            key: '7',
             module: 'Friends',
             submodule: 'Rankings',
             need: 'Encouragement'
         }, {
-            key: '6',
+            key: '8',
             module: 'Me',
             submodule: 'Building',
             need: 'Encouragement'
@@ -127,7 +127,7 @@ class ScreenTime extends React.Component {
                             ghost size='large' style={{ float: 'left', height: '64px', border: 'none' }}>
                             Prototype
                         </Button>
-                        <audio id='music' style={{ display: 'fixed', zIndex: '10' }} src={music_xydm} loop autoplay='true'></audio>
+                        <audio id='music' style={{ display: 'fixed', zIndex: '10' }} src={music_xydm} loop></audio>
                         <Button onClick={() => this.changeMusicStatus()} title='Play/Pause'
                             icon={<PlayCircleFilled spin />} ghost size='large' style={{ border: 'none', height: '64px', float: 'right' }}>
                         </Button>

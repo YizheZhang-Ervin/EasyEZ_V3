@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.0b64d372.chunk.css",
-    "main.js": "/static/js/main.e88ae7d1.chunk.js",
-    "main.js.map": "/static/js/main.e88ae7d1.chunk.js.map",
+    "main.js": "/static/js/main.44c822b2.chunk.js",
+    "main.js.map": "/static/js/main.44c822b2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0ed6e50a.js",
     "runtime-main.js.map": "/static/js/runtime-main.0ed6e50a.js.map",
     "static/css/2.220ccb42.chunk.css": "/static/css/2.220ccb42.chunk.css",
-    "static/js/2.bdea2991.chunk.js": "/static/js/2.bdea2991.chunk.js",
-    "static/js/2.bdea2991.chunk.js.map": "/static/js/2.bdea2991.chunk.js.map",
+    "static/js/2.6880fd21.chunk.js": "/static/js/2.6880fd21.chunk.js",
+    "static/js/2.6880fd21.chunk.js.map": "/static/js/2.6880fd21.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.76614d51893b46603bdbe3af9565b16e.js": "/precache-manifest.76614d51893b46603bdbe3af9565b16e.js",
+    "precache-manifest.1b2c717bfbfe62ba0546e0effc0914a7.js": "/precache-manifest.1b2c717bfbfe62ba0546e0effc0914a7.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.220ccb42.chunk.css.map": "/static/css/2.220ccb42.chunk.css.map",
     "static/css/main.0b64d372.chunk.css.map": "/static/css/main.0b64d372.chunk.css.map",
-    "static/js/2.bdea2991.chunk.js.LICENSE.txt": "/static/js/2.bdea2991.chunk.js.LICENSE.txt",
+    "static/js/2.6880fd21.chunk.js.LICENSE.txt": "/static/js/2.6880fd21.chunk.js.LICENSE.txt",
     "static/media/GAIQ.png": "/static/media/GAIQ.00d6936b.png",
     "static/media/GE-DA.png": "/static/media/GE-DA.60ae6547.png",
     "static/media/IBM_python.jpg": "/static/media/IBM_python.facdd5a5.jpg",
@@ -45,6 +45,8 @@
     "static/media/interviewQs.png": "/static/media/interviewQs.399d3920.png",
     "static/media/jpmorgan-se.png": "/static/media/jpmorgan-se.c6c19328.png",
     "static/media/js.jpg": "/static/media/js.2d9f5738.jpg",
+    "static/media/linkedinbg.png": "/static/media/linkedinbg.816e8905.png",
+    "static/media/linkedinlogo.png": "/static/media/linkedinlogo.f562213a.png",
     "static/media/neu.jpg": "/static/media/neu.d6c2af67.jpg",
     "static/media/ntu.jpg": "/static/media/ntu.bdd18104.jpg",
     "static/media/pfas-crs.png": "/static/media/pfas-crs.6e513b8d.png",
@@ -67,8 +69,8 @@
   "entrypoints": [
     "static/js/runtime-main.0ed6e50a.js",
     "static/css/2.220ccb42.chunk.css",
-    "static/js/2.bdea2991.chunk.js",
+    "static/js/2.6880fd21.chunk.js",
     "static/css/main.0b64d372.chunk.css",
-    "static/js/main.e88ae7d1.chunk.js"
+    "static/js/main.44c822b2.chunk.js"
   ]
 }
