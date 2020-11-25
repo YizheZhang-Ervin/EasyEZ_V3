@@ -59,7 +59,7 @@ class ScreenTime extends React.Component {
             frameStyle: (this.state.countFrame === false) ? frameStyle2 : frameStyle1,
             countFrame: !this.state.countFrame
         })
-        document.getElementById('phone').src = 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FYsboooRylBRXw6cDIpsI8L%2FScreen-Time-Manager%3Fnode-id%3D206%253A731%26scaling%3Dscale-down';
+        document.getElementById('phone').src = 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FYsboooRylBRXw6cDIpsI8L%2FProjects%3Fnode-id%3D410%253A728%26scaling%3Dscale-down';
     }
 
     changeMusicStatus() {

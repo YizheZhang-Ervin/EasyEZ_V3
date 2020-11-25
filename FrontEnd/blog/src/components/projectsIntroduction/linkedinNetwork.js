@@ -2,12 +2,12 @@ import React from 'react';
 import { Layout, Row, Col, Image, Button, Carousel, Collapse, Table } from 'antd';
 import interviewQs from '../../static/img/projects/screenTime/interviewQs.png';
 import empathyMap from '../../static/img/projects/screenTime/empathyMap.png';
-import sketch from '../../static/img/projects/screenTime/sketch.png';
-import wireframe from '../../static/img/projects/screenTime/wireframe.png';
-import wireframe2 from '../../static/img/projects/screenTime/wireframe2.png';
-import prototype from '../../static/img/projects/screenTime/prototype.png';
-import ut1 from '../../static/img/projects/screenTime/usabilityTesting_prepare.png';
-import ut2 from '../../static/img/projects/screenTime/usabilityTesting_prepare2.png';
+import sketch from '../../static/img/projects/networkFeature/sketch.png';
+import wireframe from '../../static/img/projects/networkFeature/wireframe.png';
+import prototype from '../../static/img/projects/networkFeature/prototype.png';
+import prototype2 from '../../static/img/projects/networkFeature/prototype2.png';
+import ut1 from '../../static/img/projects/networkFeature/usabilitytesting1.png';
+import ut2 from '../../static/img/projects/networkFeature/usabilitytesting2.png';
 import linkedinbg from '../../static/img/projects/networkFeature/linkedinbg.png';
 import linkedinlogo from '../../static/img/projects/networkFeature/linkedinlogo.png';
 import usabilityTestingResult from '../../static/img/projects/screenTime/usabilityTestingResult.png';
@@ -20,19 +20,22 @@ const div1Style = {
     textAlign: 'center',
     height: '50em',
     backgroundImage: `url(${linkedinbg})`,
-    backgroundSize: 'cover'
+    backgroundSize: 'cover',
+    fontFamily:'gt-sectra-book, Georgia, sans-serif'
 }
 const divStyleEven = {
     textAlign: 'center',
     backgroundColor: '#fff',
     paddingTop: '5em',
-    paddingBottom: '5em'
+    paddingBottom: '5em',
+    fontFamily:'gt-sectra-book, Georgia, sans-serif'
 }
 const divStyleOdd = {
     textAlign: 'center',
     backgroundColor: 'rgba(226,226,226)',
     paddingTop: '5em',
-    paddingBottom: '5em'
+    paddingBottom: '5em',
+    fontFamily:'gt-sectra-book, Georgia, sans-serif'
 }
 
 const textLeft = { textAlign: 'left' }
@@ -57,7 +60,7 @@ class ScreenTime extends React.Component {
             frameStyle: (this.state.countFrame === false) ? frameStyle2 : frameStyle1,
             countFrame: !this.state.countFrame
         })
-        document.getElementById('phone').src = 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FYsboooRylBRXw6cDIpsI8L%2FScreen-Time-Manager%3Fnode-id%3D206%253A731%26scaling%3Dscale-down';
+        // document.getElementById('phone').src = "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FYsboooRylBRXw6cDIpsI8L%2FProjects%3Fnode-id%3D467%253A1608%26scaling%3Dscale-down";
     }
 
     changeMusicStatus() {
@@ -133,7 +136,7 @@ class ScreenTime extends React.Component {
                     {/* content */}
                     <Content>
                         {/* iframe */}
-                        <iframe id='phone' title='phone' style={this.state.frameStyle} width="300" height="700" allowtransparency="false">
+                        <iframe id='phone' title='phone' style={this.state.frameStyle} width="300" height="700" src = "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FYsboooRylBRXw6cDIpsI8L%2FProjects%3Fnode-id%3D467%253A1608%26scaling%3Dscale-down">
                         </iframe>
                         {/* project */}
                         <div style={div1Style}>
@@ -167,7 +170,7 @@ class ScreenTime extends React.Component {
                             </Row>
                             <Row align='middle' justify='center'>
                                 <Col span={7}>
-                                    <Image src={interviewQs}></Image>
+                                    <Image src={interviewQs} alt="interview" title="interview"></Image>
                                 </Col>
                                 <Col span={8}>
                                     <h1 style={{ fontSize: '2em' }}>User Interviews</h1>
@@ -182,7 +185,7 @@ class ScreenTime extends React.Component {
                             {/* empathy map & POV */}
                             <Row align='middle' justify='center' style={{ padding: '3% 0' }}>
                                 <Col span={7}>
-                                    <Image src={empathyMap}></Image>
+                                    <Image src={empathyMap} alt="Empathy Map" title="Empathy Map"></Image>
                                 </Col>
                                 <Col span={8}>
                                     <h1 style={{ fontSize: '2em' }}>POV statements</h1>
@@ -243,8 +246,8 @@ class ScreenTime extends React.Component {
                                             <li>Should I let user choose data granularity of charts? <br />And I choose no.</li>
                                         </ol>
                                     </div>
-                                    <Image src={sketch} width='70%'></Image>
-                                </Col>
+                                    <Image src={sketch} width='70%' alt="Hand Sketch" title="Hand Sketch"></Image>
+                                </Col>          
                             </Row>
                         </div>
                         {/* wireframe */}
@@ -271,14 +274,9 @@ class ScreenTime extends React.Component {
                                         <p>According to these ideas, I used basic shape and UI components to build a standard grayscale model.</p>
                                         <p>The new navigation bar became "Home/Control/Friends/Me". And it seemed more concise and logical.</p>
                                     </div>
-                                    <Carousel autoplay='true'>
-                                        <div>
-                                            <Image src={wireframe} width='70%'></Image>
-                                        </div>
-                                        <div>
-                                            <Image src={wireframe2} width='70%'></Image>
-                                        </div>
-                                    </Carousel>
+                                    <div>
+                                        <Image src={wireframe} width='100%' alt="Wireframes" title="Wireframes"></Image>
+                                    </div>
                                 </Col>
                             </Row>
                         </div>
@@ -292,9 +290,9 @@ class ScreenTime extends React.Component {
                             <Button onClick={() => this.changeFrame()} type='dashed' title='App Prototype' size='large' style={{ color: 'black' }} icon={<CaretRightOutlined />}>
                                 Try Prototype
                             </Button>
-                            <Row align='top' justify="space-around">
-                                <Col span={15} style={textLeft}>
-                                    <p>Then, I made a high fidelity prototype on the basis of wireframe, which expanded and changed the following contents:</p>
+                            <p>Then, I made a high fidelity prototype on the basis of wireframe, which expanded and changed the following contents:</p>
+                            <Row align='middle' justify="space-around">
+                                <Col span={10} style={textLeft}>
                                     <ul>
                                         <li>Icon: select simple and easy to understand icon, which can understand the meaning as shown in the figure</li>
                                         <li>Color: select light and not too serious color as background</li>
@@ -305,7 +303,15 @@ class ScreenTime extends React.Component {
                             </Row>
                             <Row align='middle' justify="space-around">
                                 <Col span={12}>
-                                    <Image src={prototype}></Image>
+                                    <Carousel autoplay='true'>
+                                        <div>
+                                            <Image src={prototype} alt="Prototypes" title="Prototypes"></Image>
+                                        </div>
+                                        <div>
+                                            <Image src={prototype2} alt="Prototypes" title="Prototypes"></Image>
+                                        </div>
+                                    </Carousel>
+                                    
                                 </Col>
                             </Row>
                         </div>
@@ -319,7 +325,7 @@ class ScreenTime extends React.Component {
                             {/* test preparation */}
                             <Row align='middle' justify='center'>
                                 <Col span={7}>
-                                    <Image src={ut1} width='90%'></Image>
+                                    <Image src={ut1} width='90%' alt="prepare usability testing" title="prepare usability testing"></Image>
                                 </Col>
                                 <Col span={8}>
                                     <h1>Test Preparation</h1>
@@ -331,29 +337,28 @@ class ScreenTime extends React.Component {
                                         <Collapse defaultActiveKey={['1']} accordion='true' ghost='true' style={textLeft}>
                                             <Panel header="Scenario 1" key="1">
                                                 <p style={textLeft}>
-                                                    Look at the total/percentage usage time of all apps and restrict the time usage of some apps <br/>(Limit Time+Notification)
+                                                You are a candidate who is looking for a job, and you are interested in XGroup and want to know futher about it.
+                                                <br/>(Group Chat/Notification/Video Call)
                                                 </p>
                                             </Panel>
                                             <Panel header="Scenario 2" key="2">
                                                 <p style={textLeft}>
-                                                    Do lock screen battle with your friends and supervise each other(Supervision)
+                                                You are a candidate who is looking for a job, and you are interested in UX designer Job of XGroup. Now you want to learn more about it.
+                                                <br/>(Private Chat/Video Call)
                                                 </p>
                                             </Panel>
                                             <Panel header="Scenario 3" key="3">
                                                 <p style={textLeft}>
-                                                    Use the points you win to build buildings and take a look at rankings <br/>(Encouragement)
+                                                You're a recruiter of XGroup and you need to manage hiring group chat.
+                                                <br/>(Group Chat/Notification/Manage/Video Call)
                                                 </p>
                                             </Panel>
-                                            {/* <Panel header="Scenario 4(not test)" key="4">
+                                            <Panel header="Scenario 4" key="4">
                                                 <p style={textLeft}>
-                                                    Lock screen by yourself when you don't want battle <br/>(Limit time)
+                                                You’re a recruiter of XGroup and you need to answer candiates questions.
+                                                <br/>(Filter Candidates/Private Chat/Candidate ShowPage/Video Call)
                                                 </p>
                                             </Panel>
-                                            <Panel header="Scenario 5(not test)" key="5">
-                                                <p style={textLeft}>
-                                                    Use dice or coin to help you make a quick decision <br/>(Help decision)
-                                                </p>
-                                            </Panel> */}
                                         </Collapse>
                                     </div>
                                 </Col>
@@ -361,7 +366,7 @@ class ScreenTime extends React.Component {
                             {/* running test */}
                             <Row align='middle' justify='center'>
                                 <Col span={7}>
-                                    <Image src={ut2} width='90%'></Image>
+                                    <Image src={ut2} width='90%' alt="run usability testing" title="run usability testing"></Image>
                                 </Col>
                                 <Col span={8} style={{ padding: '3% 0' }}>
                                     <h1>Running Usability Tests</h1>
@@ -380,7 +385,7 @@ class ScreenTime extends React.Component {
                                     </p>
                                 </Col>
                                 <Col span={8}>
-                                    <Image src={usabilityTestingResult}></Image>
+                                    <Image src={usabilityTestingResult} alt="usability testing result" title="usability testing result"></Image>
                                 </Col>
                             </Row>
                         </div>
