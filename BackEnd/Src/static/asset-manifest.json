@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.0b64d372.chunk.css",
-    "main.js": "/static/js/main.815f998a.chunk.js",
-    "main.js.map": "/static/js/main.815f998a.chunk.js.map",
+    "main.js": "/static/js/main.980b5e9f.chunk.js",
+    "main.js.map": "/static/js/main.980b5e9f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0ed6e50a.js",
     "runtime-main.js.map": "/static/js/runtime-main.0ed6e50a.js.map",
     "static/css/2.220ccb42.chunk.css": "/static/css/2.220ccb42.chunk.css",
-    "static/js/2.8b0641d4.chunk.js": "/static/js/2.8b0641d4.chunk.js",
-    "static/js/2.8b0641d4.chunk.js.map": "/static/js/2.8b0641d4.chunk.js.map",
+    "static/js/2.354141ca.chunk.js": "/static/js/2.354141ca.chunk.js",
+    "static/js/2.354141ca.chunk.js.map": "/static/js/2.354141ca.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.30731fe6dc74f26f67aeb2ba2908f41c.js": "/precache-manifest.30731fe6dc74f26f67aeb2ba2908f41c.js",
+    "precache-manifest.60414b6a941df6ea09f440875df7440b.js": "/precache-manifest.60414b6a941df6ea09f440875df7440b.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.220ccb42.chunk.css.map": "/static/css/2.220ccb42.chunk.css.map",
     "static/css/main.0b64d372.chunk.css.map": "/static/css/main.0b64d372.chunk.css.map",
-    "static/js/2.8b0641d4.chunk.js.LICENSE.txt": "/static/js/2.8b0641d4.chunk.js.LICENSE.txt",
+    "static/js/2.354141ca.chunk.js.LICENSE.txt": "/static/js/2.354141ca.chunk.js.LICENSE.txt",
     "static/media/GAIQ.png": "/static/media/GAIQ.00d6936b.png",
     "static/media/GE-DA.png": "/static/media/GE-DA.60ae6547.png",
     "static/media/IBM_python.jpg": "/static/media/IBM_python.facdd5a5.jpg",
@@ -28,6 +28,7 @@
     "static/media/easyv1.png": "/static/media/easyv1.ba937014.png",
     "static/media/easyv2.png": "/static/media/easyv2.b9803d2f.png",
     "static/media/easyv3.png": "/static/media/easyv3.72333383.png",
+    "static/media/eggroup.png": "/static/media/eggroup.d860707d.png",
     "static/media/empathyMap.png": "/static/media/empathyMap.cc1b9de2.png",
     "static/media/ervin.jpg": "/static/media/ervin.49644116.jpg",
     "static/media/excel.jpg": "/static/media/excel.7c275bba.jpg",
@@ -72,8 +73,8 @@
   "entrypoints": [
     "static/js/runtime-main.0ed6e50a.js",
     "static/css/2.220ccb42.chunk.css",
-    "static/js/2.8b0641d4.chunk.js",
+    "static/js/2.354141ca.chunk.js",
     "static/css/main.0b64d372.chunk.css",
-    "static/js/main.815f998a.chunk.js"
+    "static/js/main.980b5e9f.chunk.js"
   ]
 }
