@@ -1,7 +1,8 @@
 import React from 'react';
 import { Layout, Row, Col, Image, Button, Carousel, Collapse, Table } from 'antd';
-import interviewQs from '../../static/img/projects/screenTime/interviewQs.png';
-import empathyMap from '../../static/img/projects/screenTime/empathyMap.png';
+import sprintQs from '../../static/img/projects/networkFeature/sprintqs.png';
+import opportunity from '../../static/img/projects/networkFeature/opportunity.png';
+import solution from '../../static/img/projects/networkFeature/solution.png';
 import sketch from '../../static/img/projects/networkFeature/sketch.png';
 import wireframe from '../../static/img/projects/networkFeature/wireframe.png';
 import prototype from '../../static/img/projects/networkFeature/prototype.png';
@@ -21,21 +22,21 @@ const div1Style = {
     height: '50em',
     backgroundImage: `url(${linkedinbg})`,
     backgroundSize: 'cover',
-    fontFamily:'gt-sectra-book, Georgia, sans-serif'
+    fontFamily: 'Verdana, gt-sectra-book, Georgia, sans-serif'
 }
 const divStyleEven = {
     textAlign: 'center',
     backgroundColor: '#fff',
     paddingTop: '5em',
     paddingBottom: '5em',
-    fontFamily:'gt-sectra-book, Georgia, sans-serif'
+    fontFamily: 'Verdana, gt-sectra-book, Georgia, sans-serif'
 }
 const divStyleOdd = {
     textAlign: 'center',
     backgroundColor: 'rgba(226,226,226)',
     paddingTop: '5em',
     paddingBottom: '5em',
-    fontFamily:'gt-sectra-book, Georgia, sans-serif'
+    fontFamily: 'Verdana, gt-sectra-book, Georgia, sans-serif'
 }
 
 const textLeft = { textAlign: 'left' }
@@ -60,7 +61,6 @@ class ScreenTime extends React.Component {
             frameStyle: (this.state.countFrame === false) ? frameStyle2 : frameStyle1,
             countFrame: !this.state.countFrame
         })
-        // document.getElementById('phone').src = "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FYsboooRylBRXw6cDIpsI8L%2FProjects%3Fnode-id%3D467%253A1608%26scaling%3Dscale-down";
     }
 
     changeMusicStatus() {
@@ -73,50 +73,44 @@ class ScreenTime extends React.Component {
     }
 
     render() {
-        const tableColumn = [{ title: 'Module', dataIndex: 'module', key: 'module' },
-        { title: 'Sub Module', dataIndex: 'submodule', key: 'submodule' },
+        const tableColumn = [{ title: 'Side', dataIndex: 'side', key: 'side' },
+        { title: 'Component', dataIndex: 'component', key: 'component' },
         { title: 'User Need / Function', dataIndex: 'need', key: 'need' }];
         const tableData = [{
             key: '1',
-            module: 'Home',
-            submodule: 'Daily Quotes',
-            need: 'Encouragement'
+            side: 'Candidate',
+            component: 'Job Show',
+            need: 'learn about job'
         }, {
             key: '2',
-            module: 'Home',
-            submodule: 'Charts',
-            need: 'Notification'
+            side: 'Candidate',
+            component: 'Forum',
+            need: 'Discuss and know information about company'
         }, {
             key: '3',
-            module: 'Home',
-            submodule: 'Tools',
-            need: 'Help decision'
-
+            side: 'Candidate',
+            component: 'Group Chat',
+            need: 'Chat with hiring group and receive company latest notification'
         }, {
             key: '4',
-            module: 'Home',
-            submodule: 'Limit app usage',
-            need: 'Limit time'
+            side: 'Candidate',
+            component: 'Private Chat',
+            need: 'Chat with one of the recruiters directly'
         }, {
             key: '5',
-            module: 'Control',
-            submodule: '-',
-            need: 'Limit time'
+            side: 'Hiring Group',
+            component: 'Group Chat:notification/management',
+            need: 'let candidates know latest company trends and filter group members'
         }, {
             key: '6',
-            module: 'Friends',
-            submodule: 'Lock screen battle',
-            need: 'supervision'
+            side: 'Hiring Group',
+            component: 'Private Chat',
+            need: 'filter qualified candidates and chat with them directly'
         }, {
             key: '7',
-            module: 'Friends',
-            submodule: 'Rankings',
-            need: 'Encouragement'
-        }, {
-            key: '8',
-            module: 'Me',
-            submodule: 'Building',
-            need: 'Encouragement'
+            side: 'Hiring Group',
+            component: 'Candidate Show',
+            need: 'Evaluate the candidates'
         }
         ];
         return (
@@ -136,11 +130,11 @@ class ScreenTime extends React.Component {
                     {/* content */}
                     <Content>
                         {/* iframe */}
-                        <iframe id='phone' title='phone' style={this.state.frameStyle} width="300" height="700" src = "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FYsboooRylBRXw6cDIpsI8L%2FProjects%3Fnode-id%3D467%253A1608%26scaling%3Dscale-down">
+                        <iframe id='phone' title='phone' style={this.state.frameStyle} width="300" height="700" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FYsboooRylBRXw6cDIpsI8L%2FProjects%3Fnode-id%3D467%253A1608%26scaling%3Dscale-down">
                         </iframe>
                         {/* project */}
                         <div style={div1Style}>
-                            <img style={{position:"absolute",top:'96px',right:'32px'}} src={linkedinlogo} alt="logo" width='150px'/>
+                            <img style={{ position: "absolute", top: '96px', right: '32px' }} src={linkedinlogo} alt="logo" width='150px' />
                             <Row align='middle' style={{ height: '100%' }}>
                                 <Col span={14} offset={5}>
                                     <h1 style={{ fontSize: '4em' }}>Networking New Feature</h1>
@@ -154,78 +148,57 @@ class ScreenTime extends React.Component {
                                 <Col span={15}>
                                     <h1 style={{ fontSize: '2em' }}>The User Problems</h1>
                                     <h1 style={textLeft}>LinkedIn is a great tool for networking, and a great place to search for jobs.
-                                        But when searching for a job there is no easy way 
-                                        for a candidate to network with the team who is hiring for the position: 
-                                        manager, recruiters and individual contributors.
+                                    But when searching for a job there is no easy way
+                                    for a candidate to network with the team who is hiring for the position:
+                                    manager, recruiters and individual contributors.
                                 </h1>
                                 </Col>
                             </Row>
                         </div>
-                        {/* user interview */}
+                        {/* how know questions */}
                         <div style={divStyleOdd}>
                             <Row align='middle' justify='center'>
                                 <Col span={12}>
                                     <h1 style={{ fontSize: '2em' }}>How did we know this was a problem?</h1>
                                 </Col>
                             </Row>
+                            {/* sprint questions */}
                             <Row align='middle' justify='center'>
                                 <Col span={7}>
-                                    <Image src={interviewQs} alt="interview" title="interview"></Image>
+                                    <Image src={sprintQs} alt="sprint questions" title="sprint questions"></Image>
                                 </Col>
                                 <Col span={8}>
-                                    <h1 style={{ fontSize: '2em' }}>User Interviews</h1>
+                                    <h1 style={{ fontSize: '2em' }}>Sprint Questions</h1>
                                     <ul style={textLeft}>
-                                        <li>Designed interview script, including goals, participants and questions</li>
-                                        <li>Questions were designed in different types, including Action / Story / Problem / Demo / Inventory / Comparison / Relationship / Wishes</li>
-                                        <li>Summarized user's thoughts by Think&amp;Feel / See / Hear / Say&amp;Do / Pains / Gains and make an empathy map</li>
-                                        <li>According to target user and user need to compile POV statement</li>
+                                        <li>Brainstorm from the perspective of job candidates and hiring group</li>
+                                        <li>Put forward and record our views on each question</li>
                                     </ul>
                                 </Col>
                             </Row>
-                            {/* empathy map & POV */}
+                            {/* difficulty&opportunity */}
                             <Row align='middle' justify='center' style={{ padding: '3% 0' }}>
+                                <Col span={8}>
+                                    <h1 style={{ fontSize: '2em' }}>Difficulty/Opportunity</h1>
+                                    <ul style={textLeft}>
+                                        <li>Think aloud anything that sounds difficult, or feels like an opportunity capture as a how might we</li>
+                                    </ul>
+                                </Col>
                                 <Col span={7}>
-                                    <Image src={empathyMap} alt="Empathy Map" title="Empathy Map"></Image>
+                                    <Image src={opportunity} alt="opportunity" title="opportunity"></Image>
+                                </Col>
+                            </Row>
+                            {/* solution & dot vote */}
+                            <Row align='middle' justify='center'>
+                                <Col span={7}>
+                                    <Image src={solution} alt="sprint questions" title="sprint questions"></Image>
                                 </Col>
                                 <Col span={8}>
-                                    <h1 style={{ fontSize: '2em' }}>POV statements</h1>
-                                    <Collapse defaultActiveKey={['1']} accordion='true' ghost='true' style={textLeft}>
-                                        <Panel header="Statement 1" key="1">
-                                            <p style={textLeft}>
-                                                <b>A user who</b> is a student<br />
-                                                <b>needs</b> to be supervised<br />
-                                                <b>so they can</b> concentrate on learning and don't play with mobile phones
-                                            </p>
-                                        </Panel>
-                                        <Panel header="Statement 2" key="2">
-                                            <p style={textLeft}>
-                                                <b>A user</b> who is a student<br />
-                                                <b>needs</b> movtivation<br />
-                                                <b>so they can</b> be encouraged not playing mobile phone
-                                            </p>
-                                        </Panel>
-                                        <Panel header="Statement 3" key="3">
-                                            <p style={textLeft}>
-                                                <b>A user</b> who is a student<br />
-                                                <b>needs</b> an time controller<br />
-                                                <b>so they can</b> limit usage time of different kinds of apps
-                                            </p>
-                                        </Panel>
-                                        <Panel header="Statement 4" key="4">
-                                            <p style={textLeft}>
-                                                <b>A user</b> who is a working person<br />
-                                                <b>needs</b> time notification<br />
-                                                <b>so they can</b> reduce future screen time according to the time spent
-                                            </p>
-                                        </Panel>
-                                        <Panel header="Statement 5" key="5">
-                                            <p style={textLeft}>
-                                                <b>A user</b> who is a working person<br />
-                                                <b>needs</b> time-saving tools<br />
-                                                <b>so they can</b> make quick decisions for trifles without wasting time on phone
-                                            </p>
-                                        </Panel>
-                                    </Collapse>
+                                    <h1 style={{ fontSize: '2em' }}>Solution &amp; Dot vote</h1>
+                                    <ul style={textLeft}>
+                                        <li>Take turns describing what we designed</li>
+                                        <li>Vote for good features</li>
+                                        <li>My dotted features are personal tags, badges, portrait and title</li>
+                                    </ul>
                                 </Col>
                             </Row>
                         </div>
@@ -235,19 +208,12 @@ class ScreenTime extends React.Component {
                                 <Col span={15}>
                                     <h1 style={{ fontSize: '2em' }}>Hand Sketches</h1>
                                     <div style={textLeft}>
-                                        <p>After confirming the user need,
-                                        I designed five pain points modules (Visualization / Control / Supervision / Rankings / Tools)
-                                        by a low cost, fast and simple way - hand sketch.
-                                        </p>
-                                        <p>And in this sketch, I mainly focused on page layout, and ignore complex details.</p>
-                                        <p>At first, I have put forward a variety of options for the two issues:</p>
-                                        <ol style={textLeft}>
-                                            <li>Where should I put the navigation bar?Top, Bottom or hidden in left? <br />And I choose top.</li>
-                                            <li>Should I let user choose data granularity of charts? <br />And I choose no.</li>
-                                        </ol>
+                                        <p>After sprint teamwork, I started to refine my sketches</p>
+                                        <p>According to the sketch, I continued to expand components and processes</p>
+                                        <p>Four main components: recruiter display, job seeker display, job seeker filter and chatting room</p>
                                     </div>
                                     <Image src={sketch} width='70%' alt="Hand Sketch" title="Hand Sketch"></Image>
-                                </Col>          
+                                </Col>
                             </Row>
                         </div>
                         {/* wireframe */}
@@ -256,23 +222,23 @@ class ScreenTime extends React.Component {
                                 <Col span={15}>
                                     <h1 style={{ fontSize: '2em' }}>Wireframes</h1>
                                     <div style={textLeft}>
-                                        <h1>Problems</h1>
-                                        <p>After accomplished hand sketch, I did a early usability test with my friend and found the following two problems:</p>
-                                        <ol>
-                                            <li>The top navigation is uncomfortable, it's too far from the finger</li>
-                                            <li>Too many tabs in navgation bar</li>
-                                        </ol>
-                                        <h1>Improvement</h1>
-                                        <p>Hence, I adjusted the following steps:</p>
-                                        <ol>
-                                            <li>Merged visualization module and control module into Home module, which helps reduce user operating steps</li>
-                                            <li>Simplified tools module, and merged it into Home module, it brought pleasure to serious interface, break the conventional logic</li>
-                                            <li>Added a new lock screen module for single use</li>
-                                            <li>Merged Supervision/rankings into friends module</li>
-                                            <li>Deleted the top-right "Me" icon, and add it to navigation bar</li>
-                                        </ol>
-                                        <p>According to these ideas, I used basic shape and UI components to build a standard grayscale model.</p>
-                                        <p>The new navigation bar became "Home/Control/Friends/Me". And it seemed more concise and logical.</p>
+                                        <p>After completing hand sketches, I split all pages into candidate side and hiring group side</p>
+                                        <p>Started to design wireframes, including gaps and component consistency</p>
+                                        <p>Chatting components:</p>
+                                        <ul>
+                                            <li>Candidate side
+                                                <ol>
+                                                    <li>Group chat: notification / video call</li>
+                                                    <li>Single chat: non temporary chat with video call, temporary chat without video call</li>
+                                                </ol>
+                                            </li>
+                                            <li>Hiring group side
+                                                <ol>
+                                                    <li>Group chat: notification / management / video call</li>
+                                                    <li>Single chat: non temporary chat with video call / view Information, temporary chat only can view Information</li>
+                                                </ol>
+                                            </li>
+                                        </ul>
                                     </div>
                                     <div>
                                         <Image src={wireframe} width='100%' alt="Wireframes" title="Wireframes"></Image>
@@ -282,36 +248,40 @@ class ScreenTime extends React.Component {
                         </div>
                         {/* prototypes */}
                         <div style={divStyleEven}>
-                            <Row align='middle' justify='center'>
+                            <Row align='middle' justify="center">
                                 <Col span={15}>
                                     <h1 style={{ fontSize: '2em' }}>High Fidelity Prototypes</h1>
-                                </Col>
-                            </Row>
-                            <Button onClick={() => this.changeFrame()} type='dashed' title='App Prototype' size='large' style={{ color: 'black' }} icon={<CaretRightOutlined />}>
-                                Try Prototype
-                            </Button>
-                            <p>Then, I made a high fidelity prototype on the basis of wireframe, which expanded and changed the following contents:</p>
-                            <Row align='middle' justify="space-around">
-                                <Col span={10} style={textLeft}>
-                                    <ul>
-                                        <li>Icon: select simple and easy to understand icon, which can understand the meaning as shown in the figure</li>
-                                        <li>Color: select light and not too serious color as background</li>
-                                        <li>Font: select fun and not too formal font</li>
-                                        <li>Dynamic navigation: implement the navigation between pages</li>
-                                    </ul>
-                                </Col>
-                            </Row>
-                            <Row align='middle' justify="space-around">
-                                <Col span={12}>
-                                    <Carousel autoplay='true'>
-                                        <div>
-                                            <Image src={prototype} alt="Prototypes" title="Prototypes"></Image>
-                                        </div>
-                                        <div>
-                                            <Image src={prototype2} alt="Prototypes" title="Prototypes"></Image>
-                                        </div>
-                                    </Carousel>
-                                    
+                                    <Button onClick={() => this.changeFrame()} type='dashed' title='App Prototype' size='large' style={{ color: 'black' }} icon={<CaretRightOutlined />}>
+                                        Try Prototype
+                                    </Button>
+                                    <div style={textLeft}>
+                                        <p>After completing wireframes, I used real world components to make prototype with a focus on detail design, including color and fonts</p>
+                                        <p>The whole prototype process starts with role selection:</p>
+                                        <ul>
+                                            <li>Candidate:
+                                                <ol>
+                                                    <li>Job Show-&gt;Forum-&gt;Group chat list-&gt;Group chat</li>
+                                                    <li>Job Show-&gt;Forum-&gt;Private chat list-&gt;Private chat</li>
+                                                </ol>
+                                            </li>
+                                            <li>Hiring Group:
+                                                <ol>
+                                                    <li>Group chat list-&gt;Group chat</li>
+                                                    <li>Private chat list-&gt;Filter-&gt;Private chat-&gt;Candidate show</li>
+                                                </ol>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <Carousel autoplay='true'>
+                                            <div>
+                                                <Image src={prototype} alt="Prototypes" title="Prototypes"></Image>
+                                            </div>
+                                            <div>
+                                                <Image src={prototype2} alt="Prototypes" title="Prototypes"></Image>
+                                            </div>
+                                        </Carousel>
+                                    </div>
                                 </Col>
                             </Row>
                         </div>
@@ -337,26 +307,26 @@ class ScreenTime extends React.Component {
                                         <Collapse defaultActiveKey={['1']} accordion='true' ghost='true' style={textLeft}>
                                             <Panel header="Scenario 1" key="1">
                                                 <p style={textLeft}>
-                                                You are a candidate who is looking for a job, and you are interested in XGroup and want to know futher about it.
-                                                <br/>(Group Chat/Notification/Video Call)
+                                                    You are a candidate who is looking for a job, and you are interested in XGroup and want to know futher about it.
+                                                <br />(Group Chat/Notification/Video Call)
                                                 </p>
                                             </Panel>
                                             <Panel header="Scenario 2" key="2">
                                                 <p style={textLeft}>
-                                                You are a candidate who is looking for a job, and you are interested in UX designer Job of XGroup. Now you want to learn more about it.
-                                                <br/>(Private Chat/Video Call)
+                                                    You are a candidate who is looking for a job, and you are interested in UX designer Job of XGroup. Now you want to learn more about it.
+                                                <br />(Private Chat/Video Call)
                                                 </p>
                                             </Panel>
                                             <Panel header="Scenario 3" key="3">
                                                 <p style={textLeft}>
-                                                You're a recruiter of XGroup and you need to manage hiring group chat.
-                                                <br/>(Group Chat/Notification/Manage/Video Call)
+                                                    You're a recruiter of XGroup and you need to manage hiring group chat.
+                                                <br />(Group Chat/Notification/Manage/Video Call)
                                                 </p>
                                             </Panel>
                                             <Panel header="Scenario 4" key="4">
                                                 <p style={textLeft}>
-                                                You’re a recruiter of XGroup and you need to answer candiates questions.
-                                                <br/>(Filter Candidates/Private Chat/Candidate ShowPage/Video Call)
+                                                    You’re a recruiter of XGroup and you need to answer candiates questions.
+                                                <br />(Filter Candidates/Private Chat/Candidate ShowPage/Video Call)
                                                 </p>
                                             </Panel>
                                         </Collapse>
@@ -371,7 +341,7 @@ class ScreenTime extends React.Component {
                                 <Col span={8} style={{ padding: '3% 0' }}>
                                     <h1>Running Usability Tests</h1>
                                     <p style={textLeft}>
-                                        The running test adopts a standard process:<br />
+                                        The running test adopted a standard process:<br />
                                     Introduce the app to users, Start recording, Ask demographic related questions,
                                     Do scenario tasks, feedback scoring (Likert scale), conclusion.
                                     </p>
@@ -403,30 +373,29 @@ class ScreenTime extends React.Component {
                             <Row align='middle' justify='center'>
                                 <Col span={15} style={textLeft}>
                                     <ul>
-                                        <li>To sum up, I obtain five main User Need from user interview, <br />
-                                            including <b>Help decision, Encouragement, Supervision, Limit time and Notification</b>.
+                                        <li>To sum up, I designed the networking feature by two sides,
+                                            including <b>Candidate side and Hiring Group side</b>.
                                         </li>
                                         <br />
                                         <li>The final solution is as follows:</li>
                                     </ul>
-                                    <Table columns={tableColumn} dataSource={tableData} scroll={{ y: 150 }} />
+                                    <Table columns={tableColumn} dataSource={tableData} scroll={{ y: 250 }} />
                                 </Col>
                             </Row>
                             <Row align='middle' justify='center'>
                                 <Col span={7}>
                                     <h1>What went well</h1>
                                     <ul style={textLeft}>
-                                        <li>Users can quickly find the entrance of the lock screen battle and analysis of apps usage.</li>
-                                        <li>According to the result of Likert scale, 80% user like the battle mode.</li>
-                                        <li>Stength: Battle mode &amp; Build buildings</li>
+                                        <li>Users can quickly find the entrance of ...</li>
+                                        <li>According to the result of Likert scale, 80% user like ...</li>
+                                        <li>Stength: ...</li>
                                     </ul>
                                 </Col>
                                 <Col span={8}>
                                     <h1>What could be improved</h1>
                                     <ul style={textLeft}>
                                         <li>Some of the elements are not clear enough, it can be changed.</li>
-                                        <li>The part which is difficult to test is tools, because users all consider it's a funny design.
-                                            But I can't figure out whether it’s really effective and whether user like virtual coin or dice or a roulette by prototype.</li>
+                                        <li>The part which is difficult to test is ...</li>
                                     </ul>
                                 </Col>
                             </Row>
@@ -441,10 +410,8 @@ class ScreenTime extends React.Component {
                             <Row align='middle' justify='center'>
                                 <Col span={8}>
                                     <ul style={textLeft}>
-                                        <li>Do research on battle related feature, and user favourite battle mode(single/1V1/team battle).</li>
-                                        <li>Add more encouragement feature.<br />
-                                            For example, lock time points can not only be used to build buildings,
-                                            but also be used to go shopping (virtual props/ real goods).
+                                        <li>Do research on ...</li>
+                                        <li>Add more ... feature
                                         </li>
                                     </ul>
                                 </Col>
