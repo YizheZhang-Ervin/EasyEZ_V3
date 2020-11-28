@@ -14,6 +14,7 @@ import hds from '../static/img/projects/hds.jpg';
 import excel from '../static/img/projects/excel.jpg';
 import beagvs from '../static/img/projects/bea-gvs.jpg';
 import screentime from '../static/img/projects/screentime.png';
+import networkfeature from '../static/img/projects/networkfeature.png'
 import crs1 from '../static/img/projects/bea-gvs-crs.png';
 import crs2 from '../static/img/projects/alg-crs.png';
 import crs3 from '../static/img/projects/harrier-crs.png';
@@ -51,7 +52,7 @@ class Projects extends React.Component {
                 <div id='prj001' className='margin-97'>
                     <Divider orientation="left"><SolutionOutlined /> Projects</Divider>
                     <Divider orientation='left' ><CalendarOutlined /> 2020</Divider>
-                    <Collapse defaultActiveKey={['p17']} ghost>
+                    <Collapse defaultActiveKey={['p18']} ghost>
                         <Panel className='font-bold' header="EGGroup" key="p19">
                             <p className='font-normal'>Oct 2020 - Future</p>
                             <p className='font-normal'>Vue, Express, Mysql, Antd</p>
@@ -62,7 +63,7 @@ class Projects extends React.Component {
                             <p className='font-normal'>Sept 2020 - Nov 2020</p>
                             <p className='font-normal'>Sketch, Wireframe, Prototype</p>
                             <p><a rel="noopener noreferrer" href='/projects/networkFeature'>UX Portfolio</a></p>
-                            {/* <Image src={}></Image> */}
+                            <Image src={networkfeature}></Image>
                         </Panel>
                         <Panel className='font-bold' header="Screen Time App" key="p17">
                             <p className='font-normal'>Sept 2020 - Nov 2020</p>
