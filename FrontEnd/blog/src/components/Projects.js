@@ -53,11 +53,17 @@ class Projects extends React.Component {
                     <Divider orientation="left"><SolutionOutlined /> Projects</Divider>
                     <Divider orientation='left' ><CalendarOutlined /> 2020</Divider>
                     <Collapse defaultActiveKey={['p18']} ghost>
-                        <Panel className='font-bold' header="EGGroup" key="p19">
+                        <Panel className='font-bold' header="EGGroup" key="p20">
                             <p className='font-normal'>Oct 2020 - Future</p>
                             <p className='font-normal'>Vue, Express, Mysql, Antd</p>
                             <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/EGGroup'>Github</a></p>
                             <Image src={eggroup}></Image>
+                        </Panel>
+                        <Panel className='font-bold' header="Fixed Income Security- NS Model" key="p19">
+                            <p className='font-normal'>Sept 2020 - Nov 2020</p>
+                            <p className='font-normal'>Vue, Flask, Echarts</p>
+                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/FixedIncomeSecurities'>Github</a></p>
+                            {/* <Image src={}></Image> */}
                         </Panel>
                         <Panel className='font-bold' header="LinkedIn Network New Feature" key="p18">
                             <p className='font-normal'>Sept 2020 - Nov 2020</p>
@@ -98,7 +104,7 @@ class Projects extends React.Component {
                             <Image src={spa}></Image>
                         </Panel>
                         <Panel className='font-bold' header="MA Education Data Analysis" key="p11">
-                            <p className='font-normal'>Python(Jupyter Notebook, Numpy, Pandas, Scipy, Sklearn, Matplotlib)</p>
+                            <p className='font-normal'>Python (Jupyter Notebook, Numpy, Pandas, Scipy, Sklearn, Matplotlib)</p>
                         </Panel>
                         <Panel className='font-bold' header="Gold Visualization Website" key="p10">
                             <p className='font-normal'>Mar 2020 - Apr 2020</p>
