@@ -15,6 +15,7 @@ import screentime from '../static/img/projects/screentime.png';
 import networkfeature from '../static/img/projects/networkfeature.png'
 import crs3 from '../static/img/projects/hnas-crs.jpg';
 import eggroup from '../static/img/projects/eggroup.png';
+import fishgroup from '../static/img/projects/fishgroup.png';
 
 const { Panel } = Collapse;
 
@@ -29,8 +30,10 @@ class Projects extends React.Component {
                         <Image src={homesearch} ></Image>
                         <Image src={crs3} ></Image>
                         <Image src={easyv3} ></Image>
+                        <Image src={fishgroup}></Image>
                     </Carousel>
                     <Carousel autoplay style={{ gridColumn: '1' }}>
+                        <Image src={fishgroup}></Image>
                         <Image src={easyv3} ></Image>
                         <Image src={crs3} ></Image>
                         <Image src={homesearch} ></Image>
@@ -45,20 +48,20 @@ class Projects extends React.Component {
                         <Panel className='font-bold' header="EGGroup" key="p17">
                             <p className='font-normal'>Oct 2020 - Future</p>
                             <p className='font-normal'>Vue, Express, Mysql, Antd</p>
-                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/EGGroup'>Github</a></p>
+                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/EGGroup_V1'>Github</a></p>
                             <Image src={eggroup}></Image>
                         </Panel>
                         <Panel className='font-bold' header="Fixed Income Security- NS Model" key="p16">
                             <p className='font-normal'>Sept 2020 - Nov 2020</p>
                             <p className='font-normal'>Vue, Flask, Echarts</p>
                             <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/FixedIncomeSecurities'>Github</a></p>
-                            {/* <Image src={}></Image> */}
+                            <Image src={fishgroup} width="50%"></Image>
                         </Panel>
                         <Panel className='font-bold' header="LinkedIn Network New Feature" key="p15">
                             <p className='font-normal'>Sept 2020 - Nov 2020</p>
                             <p className='font-normal'>Sketch, Wireframe, Prototype</p>
                             <p><a rel="noopener noreferrer" href='/projects/networkFeature'>UX Portfolio</a></p>
-                            <Image src={networkfeature}></Image>
+                            <Image src={networkfeature} width="50%"></Image>
                         </Panel>
                         <Panel className='font-bold' header="Screen Time App" key="p14">
                             <p className='font-normal'>Sept 2020 - Nov 2020</p>
@@ -69,7 +72,7 @@ class Projects extends React.Component {
                         <Panel className='font-bold' header="Cloud Storage App" key="p13">
                             <p className='font-normal'>Apr 2020 - May 2020</p>
                             <p className='font-normal'>Django, Bootstrap, Sqlite</p>
-                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/IMISCloud'>Github</a></p>
+                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/MobileApp_IMISCloud'>Github</a></p>
                             <Image src={imiscloud}></Image>
                         </Panel>
                         <Panel className='font-bold' header="Home Rent Website" key="p12">
@@ -84,7 +87,7 @@ class Projects extends React.Component {
                         <Panel className='font-bold' header="Gold Visualization Website" key="p10">
                             <p className='font-normal'>Mar 2020 - Apr 2020</p>
                             <p className='font-normal'>Tornado, Bootstrap, Sqlite</p>
-                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/BEA'>Github</a></p>
+                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/WebApp_BEA'>Github</a></p>
                             <Image src={beagvs} width="50%"></Image>
                             <br/>
                             <Image src={pfas}></Image>

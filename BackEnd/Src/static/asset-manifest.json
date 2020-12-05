@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.0b64d372.chunk.css",
-    "main.js": "/static/js/main.6d67eee2.chunk.js",
-    "main.js.map": "/static/js/main.6d67eee2.chunk.js.map",
+    "main.js": "/static/js/main.ca066276.chunk.js",
+    "main.js.map": "/static/js/main.ca066276.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.0ed6e50a.js",
     "runtime-main.js.map": "/static/js/runtime-main.0ed6e50a.js.map",
     "static/css/2.220ccb42.chunk.css": "/static/css/2.220ccb42.chunk.css",
-    "static/js/2.187abbc4.chunk.js": "/static/js/2.187abbc4.chunk.js",
-    "static/js/2.187abbc4.chunk.js.map": "/static/js/2.187abbc4.chunk.js.map",
+    "static/js/2.cb7077fb.chunk.js": "/static/js/2.cb7077fb.chunk.js",
+    "static/js/2.cb7077fb.chunk.js.map": "/static/js/2.cb7077fb.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.11aeec21d89da23d6ca19221c66972ae.js": "/precache-manifest.11aeec21d89da23d6ca19221c66972ae.js",
+    "precache-manifest.d2ed392960f5c491b6e41ab7c55ac492.js": "/precache-manifest.d2ed392960f5c491b6e41ab7c55ac492.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.220ccb42.chunk.css.map": "/static/css/2.220ccb42.chunk.css.map",
     "static/css/main.0b64d372.chunk.css.map": "/static/css/main.0b64d372.chunk.css.map",
-    "static/js/2.187abbc4.chunk.js.LICENSE.txt": "/static/js/2.187abbc4.chunk.js.LICENSE.txt",
+    "static/js/2.cb7077fb.chunk.js.LICENSE.txt": "/static/js/2.cb7077fb.chunk.js.LICENSE.txt",
     "static/media/GAIQ.png": "/static/media/GAIQ.00d6936b.png",
     "static/media/GE-DA.png": "/static/media/GE-DA.60ae6547.png",
     "static/media/IBM_python.jpg": "/static/media/IBM_python.facdd5a5.jpg",
@@ -32,6 +32,7 @@
     "static/media/ez-light.png": "/static/media/ez-light.cc6a4bdd.png",
     "static/media/ez.png": "/static/media/ez.d4d9af81.png",
     "static/media/ezapp.apk": "/static/media/ezapp.2a39c361.apk",
+    "static/media/fishgroup.png": "/static/media/fishgroup.fc883589.png",
     "static/media/guess.jpg": "/static/media/guess.3e3dcb02.jpg",
     "static/media/hds.jpg": "/static/media/hds.25d9fbd3.jpg",
     "static/media/his.jpg": "/static/media/his.cf55e649.jpg",
@@ -70,8 +71,8 @@
   "entrypoints": [
     "static/js/runtime-main.0ed6e50a.js",
     "static/css/2.220ccb42.chunk.css",
-    "static/js/2.187abbc4.chunk.js",
+    "static/js/2.cb7077fb.chunk.js",
     "static/css/main.0b64d372.chunk.css",
-    "static/js/main.6d67eee2.chunk.js"
+    "static/js/main.ca066276.chunk.js"
   ]
 }
