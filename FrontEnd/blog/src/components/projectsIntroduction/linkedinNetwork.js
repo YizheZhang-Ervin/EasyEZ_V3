@@ -11,7 +11,7 @@ import ut1 from '../../static/img/projects/networkFeature/usabilitytesting1.png'
 import ut2 from '../../static/img/projects/networkFeature/usabilitytesting2.png';
 import linkedinbg from '../../static/img/projects/networkFeature/linkedinbg.png';
 import linkedinlogo from '../../static/img/projects/networkFeature/linkedinlogo.png';
-import usabilityTestingResult from '../../static/img/projects/screenTime/usabilityTestingResult.png';
+import ut3 from '../../static/img/projects/networkFeature/usabilitytesting3.png';
 import music_xydm from '../../static/others/xydm.mp3';
 import { PlayCircleFilled, CaretRightOutlined } from '@ant-design/icons';
 
@@ -22,21 +22,23 @@ const div1Style = {
     height: '50em',
     backgroundImage: `url(${linkedinbg})`,
     backgroundSize: 'cover',
-    fontFamily: 'Verdana, gt-sectra-book, Georgia, sans-serif'
+    fontFamily: '-apple-system, BlinkMacSystemFont, Verdana, gt-sectra-book, Georgia, sans-serif'
 }
 const divStyleEven = {
     textAlign: 'center',
     backgroundColor: '#fff',
     paddingTop: '5em',
     paddingBottom: '5em',
-    fontFamily: 'Verdana, gt-sectra-book, Georgia, sans-serif'
+    fontFamily: '-apple-system, BlinkMacSystemFont, Verdana, gt-sectra-book, Georgia, sans-serif',
+    fontSize:'1.1em'
 }
 const divStyleOdd = {
     textAlign: 'center',
     backgroundColor: 'rgba(226,226,226)',
     paddingTop: '5em',
     paddingBottom: '5em',
-    fontFamily: 'Verdana, gt-sectra-book, Georgia, sans-serif'
+    fontFamily: '-apple-system, BlinkMacSystemFont, Verdana, gt-sectra-book, Georgia, sans-serif',
+    fontSize:'1.1em'
 }
 
 const textLeft = { textAlign: 'left' }
@@ -46,7 +48,6 @@ const frameStyle2 = { display: 'none' };
 class ScreenTime extends React.Component {
     state = {
         divStyle: {
-            fontFamily: 'times, Verdana,Helvetica, Arial, sans-serif',
             display: this.props.stShow,
             height: window.innerHeight
                 || document.documentElement.clientHeight
@@ -94,17 +95,17 @@ class ScreenTime extends React.Component {
         }, {
             key: '4',
             side: 'Candidate',
-            component: 'Private Chat',
+            component: 'Private Chat (temp & non-temp)',
             need: 'Chat with one of the recruiters directly'
         }, {
             key: '5',
             side: 'Hiring Group',
-            component: 'Group Chat:notification/management',
+            component: 'Group Chat',
             need: 'let candidates know latest company trends and filter group members'
         }, {
             key: '6',
             side: 'Hiring Group',
-            component: 'Private Chat',
+            component: 'Private Chat (temp & non-temp)',
             need: 'filter qualified candidates and chat with them directly'
         }, {
             key: '7',
@@ -147,11 +148,11 @@ class ScreenTime extends React.Component {
                             <Row align='middle' justify='center'>
                                 <Col span={15}>
                                     <h1 style={{ fontSize: '2em' }}>The User Problems</h1>
-                                    <h1 style={textLeft}>LinkedIn is a great tool for networking, and a great place to search for jobs.
+                                    <h3 style={textLeft}>LinkedIn is a great tool for networking, and a great place to search for jobs.
                                     But when searching for a job there is no easy way
                                     for a candidate to network with the team who is hiring for the position:
                                     manager, recruiters and individual contributors.
-                                </h1>
+                                    </h3>
                                 </Col>
                             </Row>
                         </div>
@@ -224,18 +225,20 @@ class ScreenTime extends React.Component {
                                     <div style={textLeft}>
                                         <p>After completing hand sketches, I split all pages into candidate side and hiring group side</p>
                                         <p>Started to design wireframes, including gaps and component consistency</p>
-                                        <p>Chatting components:</p>
+                                        <p>And I put forward the following ideas: 2 sides Chatting components</p>
                                         <ul>
                                             <li>Candidate side
                                                 <ol>
-                                                    <li>Group chat: notification / video call</li>
-                                                    <li>Single chat: non temporary chat with video call, temporary chat without video call</li>
+                                                    <li>Group chat: notification (with comments function) / video call</li>
+                                                    <li>Single chat: non temporary chat (with video call / resume / personal show),
+                                                         temporary chat (with resume / personal show / chatting expiration time)</li>
                                                 </ol>
                                             </li>
                                             <li>Hiring group side
                                                 <ol>
-                                                    <li>Group chat: notification / management / video call</li>
-                                                    <li>Single chat: non temporary chat with video call / view Information, temporary chat only can view Information</li>
+                                                    <li>Group chat: notification / manage memebers / video call</li>
+                                                    <li>Single chat: non temporary chat (with video call / resume / personal show / matching report),
+                                                         temporary chat (with resume / personal show / matching report / chatting expiration time)</li>
                                                 </ol>
                                             </li>
                                         </ul>
@@ -355,7 +358,7 @@ class ScreenTime extends React.Component {
                                     </p>
                                 </Col>
                                 <Col span={8}>
-                                    <Image src={usabilityTestingResult} alt="usability testing result" title="usability testing result"></Image>
+                                    <Image src={ut3} alt="usability testing result" title="usability testing result"></Image>
                                 </Col>
                             </Row>
                         </div>
@@ -373,10 +376,19 @@ class ScreenTime extends React.Component {
                             <Row align='middle' justify='center'>
                                 <Col span={15} style={textLeft}>
                                     <ul>
-                                        <li>To sum up, I designed the networking feature by two sides,
-                                            including <b>Candidate side and Hiring Group side</b>.
+                                        <li>To sum up, the main goal of the feature is for candidates and hiring group to connect &amp; know each other.</li>
+                                        <li>I design two different levels of "Connect &amp; Know"</li>
+                                        <li>Basic "know": Job show page / Company Forum</li>
+                                        <li>Deep "connect": 
+                                            <ul>
+                                                <li>Group Chat: Video Call / Group Mgt / Notification</li>
+                                                <li>Private Chat: candidate filter / temporary chat / non temporary chat</li>
+                                            </ul>
                                         </li>
-                                        <br />
+                                        <br/>
+                                        <li>From another point of view, I designed the networking feature by two sides,
+                                            including <b>Candidate side and Hiring Group side</b>
+                                        </li>
                                         <li>The final solution is as follows:</li>
                                     </ul>
                                     <Table columns={tableColumn} dataSource={tableData} scroll={{ y: 250 }} />
@@ -386,16 +398,17 @@ class ScreenTime extends React.Component {
                                 <Col span={7}>
                                     <h1>What went well</h1>
                                     <ul style={textLeft}>
-                                        <li>Users can quickly find the entrance of ...</li>
-                                        <li>According to the result of Likert scale, 80% user like ...</li>
-                                        <li>Stength: ...</li>
+                                        <li>Users can quickly find the entrance of group chat and private chat</li>
+                                        <li>According to the result of Likert scale, over 75% user like temporary chat feature</li>
+                                        <li>Stength: temporary chat and filter qualified candidates feature help hiring group faster and more effective find ideal candidates</li>
                                     </ul>
                                 </Col>
                                 <Col span={8}>
                                     <h1>What could be improved</h1>
                                     <ul style={textLeft}>
-                                        <li>Some of the elements are not clear enough, it can be changed.</li>
-                                        <li>The part which is difficult to test is ...</li>
+                                        <li>Some of the elements are not clear enough, like video button, call button on the top, it can be changed</li>
+                                        <li>The part which is difficult to test is the matching level report 
+                                            between candidate and the job (pie chart, bar chart or just text description)</li>
                                     </ul>
                                 </Col>
                             </Row>
@@ -410,8 +423,9 @@ class ScreenTime extends React.Component {
                             <Row align='middle' justify='center'>
                                 <Col span={8}>
                                     <ul style={textLeft}>
-                                        <li>Do research on ...</li>
-                                        <li>Add more ... feature
+                                        <li>Do research on the matching measurement and matching report, 
+                                            then use amounts of testing data to find out which one is the most intuitive and reliable</li>
+                                        <li>And also, I can design some filter feature for candidate side, like filtering inappropriate job and chatting
                                         </li>
                                     </ul>
                                 </Col>
