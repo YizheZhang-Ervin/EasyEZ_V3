@@ -160,7 +160,7 @@ class ScreenTime extends React.Component {
                         <div style={divStyleOdd}>
                             <Row align='middle' justify='center'>
                                 <Col span={12}>
-                                    <h1 style={{ fontSize: '2em' }}>How did we know this was a problem?</h1>
+                                    <h1 style={{ fontSize: '2em' }}>How to think about solutions?</h1>
                                 </Col>
                             </Row>
                             {/* sprint questions */}
@@ -210,8 +210,8 @@ class ScreenTime extends React.Component {
                                     <h1 style={{ fontSize: '2em' }}>Hand Sketches</h1>
                                     <div style={textLeft}>
                                         <p>After sprint teamwork, I started to refine my sketches</p>
-                                        <p>According to the sketch, I continued to expand components and processes</p>
-                                        <p>Four main components: recruiter display, job seeker display, job seeker filter and chatting room</p>
+                                        <p>According to the sketch, I continued to expand components and user flow</p>
+                                        <p>Five main components: Company Forum, Job Show, Candidate Show, Candidates filter and Chatting room</p>
                                     </div>
                                     <Image src={sketch} width='70%' alt="Hand Sketch" title="Hand Sketch"></Image>
                                 </Col>
@@ -225,19 +225,19 @@ class ScreenTime extends React.Component {
                                     <div style={textLeft}>
                                         <p>After completing hand sketches, I split all pages into candidate side and hiring group side</p>
                                         <p>Started to design wireframes, including gaps and component consistency</p>
-                                        <p>And I put forward the following ideas: 2 sides Chatting components</p>
+                                        <p>And I put forward the following ideas:</p>
                                         <ul>
                                             <li>Candidate side
                                                 <ol>
                                                     <li>Group chat: notification (with comments function) / video call</li>
-                                                    <li>Single chat: non temporary chat (with video call / resume / personal show),
+                                                    <li>Private chat: non temporary chat (with video call / resume / personal show),
                                                          temporary chat (with resume / personal show / chatting expiration time)</li>
                                                 </ol>
                                             </li>
                                             <li>Hiring group side
                                                 <ol>
                                                     <li>Group chat: notification / manage memebers / video call</li>
-                                                    <li>Single chat: non temporary chat (with video call / resume / personal show / matching report),
+                                                    <li>Private chat: non temporary chat (with video call / resume / personal show / matching report),
                                                          temporary chat (with resume / personal show / matching report / chatting expiration time)</li>
                                                 </ol>
                                             </li>
@@ -258,8 +258,8 @@ class ScreenTime extends React.Component {
                                         Try Prototype
                                     </Button>
                                     <div style={textLeft}>
-                                        <p>After completing wireframes, I used real world components to make prototype with a focus on detail design, including color and fonts</p>
-                                        <p>The whole prototype process starts with role selection:</p>
+                                        <p>After completing wireframes, I make prototype with a focus on detail design, including color and fonts, and try to integrate the prototype into raw LinkedIn interface</p>
+                                        <p>The user flow starts with role selection:</p>
                                         <ul>
                                             <li>Candidate:
                                                 <ol>
@@ -344,7 +344,7 @@ class ScreenTime extends React.Component {
                                 <Col span={8} style={{ padding: '3% 0' }}>
                                     <h1>Running Usability Tests</h1>
                                     <p style={textLeft}>
-                                        The running test adopted a standard process:<br />
+                                        The test process is:<br />
                                     Introduce the app to users, Start recording, Ask demographic related questions,
                                     Do scenario tasks, feedback scoring (Likert scale), conclusion.
                                     </p>
@@ -376,7 +376,8 @@ class ScreenTime extends React.Component {
                             <Row align='middle' justify='center'>
                                 <Col span={15} style={textLeft}>
                                     <ul>
-                                        <li>To sum up, the main goal of the feature is for candidates and hiring group to connect &amp; know each other.</li>
+                                        <li>To sum up, the main goal of the feature is for qualified candidates and hiring group to connect &amp; know each other.</li>
+                                        <br />
                                         <li>I design two different levels of "Connect &amp; Know"</li>
                                         <li>Basic "know": Job show page / Company Forum</li>
                                         <li>Deep "connect": 
@@ -400,14 +401,14 @@ class ScreenTime extends React.Component {
                                     <ul style={textLeft}>
                                         <li>Users can quickly find the entrance of group chat and private chat</li>
                                         <li>According to the result of Likert scale, over 75% user like temporary chat feature</li>
-                                        <li>Stength: temporary chat and filter qualified candidates feature help hiring group faster and more effective find ideal candidates</li>
+                                        <li>Stength: temporary chat and filter qualified candidates help hiring group faster and more effective find ideal candidates</li>
                                     </ul>
                                 </Col>
                                 <Col span={8}>
                                     <h1>What could be improved</h1>
                                     <ul style={textLeft}>
                                         <li>Some of the elements are not clear enough, like video button, call button on the top, it can be changed</li>
-                                        <li>The part which is difficult to test is the matching level report 
+                                        <li>The part which is difficult to test is the format of matching level report 
                                             between candidate and the job (pie chart, bar chart or just text description)</li>
                                     </ul>
                                 </Col>
@@ -423,8 +424,7 @@ class ScreenTime extends React.Component {
                             <Row align='middle' justify='center'>
                                 <Col span={8}>
                                     <ul style={textLeft}>
-                                        <li>Do research on the matching measurement and matching report, 
-                                            then use amounts of testing data to find out which one is the most intuitive and reliable</li>
+                                        <li>Do research on different ways of measuring how matching is the candidate, then use amounts of testing data to find out which one is the most intuitive and reliable</li>
                                         <li>And also, I can design some filter feature for candidate side, like filtering inappropriate job and chatting
                                         </li>
                                     </ul>
