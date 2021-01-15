@@ -44,17 +44,22 @@ class Projects extends React.Component {
                 <div id='prj001' className='margin-97'>
                     <Divider orientation="left"><SolutionOutlined /> Projects</Divider>
                     <Divider orientation='left' ><CalendarOutlined /> 2020</Divider>
-                    <Collapse defaultActiveKey={['p15']} ghost>
+                    <Collapse defaultActiveKey={['p18']} ghost>
+                        <Panel className='font-bold' header="FinTech Algorithms" key="p18">
+                            <p className='font-normal'>Jan 2021 - April 2021</p>
+                            <p className='font-normal'>Vue, Django, Sqlite, ElementUI</p>
+                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/FinTech_Algorithms'>Github</a></p>
+                        </Panel>
                         <Panel className='font-bold' header="EGGroup" key="p17">
                             <p className='font-normal'>Oct 2020 - Future</p>
-                            <p className='font-normal'>Vue, Express, Mysql, Antd</p>
-                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/EGGroup_V1'>Github</a></p>
+                            <p className='font-normal'>Vue, Express, Mysql, ElementUI</p>
+                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/EGGroup_V2'>Github</a></p>
                             <Image src={eggroup}></Image>
                         </Panel>
                         <Panel className='font-bold' header="Fixed Income Security- NS Model" key="p16">
                             <p className='font-normal'>Sept 2020 - Nov 2020</p>
                             <p className='font-normal'>Vue, Flask, Echarts</p>
-                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/FixedIncomeSecurities'>Github</a></p>
+                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/FinTech_FishGroup'>Github</a></p>
                             <Image src={fishgroup} width="50%"></Image>
                         </Panel>
                         <Panel className='font-bold' header="LinkedIn Network New Feature" key="p15">
@@ -115,13 +120,13 @@ class Projects extends React.Component {
                         <Panel className='font-bold' header="Hotel Database System" key="p6">
                             <p className='font-normal'>Sept 2019 - Dec 2019</p>
                             <p className='font-normal'>Java, Sqlserver, Power BI</p>
-                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/DesktopAppDevelop'>Github</a></p>
+                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/Course_InfoSystems'>Github</a></p>
                             <Image src={hds}></Image>
                         </Panel>
                         <Panel className='font-bold' header="Hospital Information System" key="p5">
                             <p className='font-normal'>Sept 2019 - Dec 2019</p>
                             <p className='font-normal'>Java</p>
-                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/DesktopAppDevelop'>Github</a></p>
+                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/Course_InfoSystems'>Github</a></p>
                             <Image src={his}></Image>
                         </Panel>
                         <Panel className='font-bold' header="Gamification Used by Exploratory Search System[GUESS]" key="p4">
@@ -132,7 +137,7 @@ class Projects extends React.Component {
                         <Panel className='font-bold' header="Douban Website" key="p3">
                             <p className='font-normal'>Sept 2018 - Jan 2019</p>
                             <p className='font-normal'>JSP</p>
-                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/DesktopApp_JavaCourse'>Github</a></p>
+                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/Course_JavaJSP'>Github</a></p>
                         </Panel>
                         <Panel className='font-bold' header="Little Iron Pot App" key="p2">
                             <p className='font-normal'>Mar 2018 - Jun 2018</p>
@@ -141,7 +146,7 @@ class Projects extends React.Component {
                         <Panel className='font-bold' header="Tank Battle Game" key="p1">
                             <p className='font-normal'>Mar 2018 - Jun 2018</p>
                             <p className='font-normal'>Java AWT</p>
-                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/DesktopApp_JavaCourse'>Github</a></p>
+                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/Course_JavaJSP'>Github</a></p>
                         </Panel>
                     </Collapse>
                 </div>
