@@ -43,7 +43,7 @@ class Projects extends React.Component {
                 {/* projects */}
                 <div id='prj001' className='margin-97'>
                     <Divider orientation="left"><SolutionOutlined /> Projects</Divider>
-                    <Divider orientation='left' ><CalendarOutlined /> 2020</Divider>
+                    <Divider orientation='left' ><CalendarOutlined /> 2021</Divider>
                     <Collapse defaultActiveKey={['p18']} ghost>
                         <Panel className='font-bold' header="FinTech Algorithms" key="p18">
                             <p className='font-normal'>Jan 2021 - April 2021</p>
@@ -51,11 +51,14 @@ class Projects extends React.Component {
                             <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/FinTech_Algorithms'>Github</a></p>
                         </Panel>
                         <Panel className='font-bold' header="EGGroup" key="p17">
-                            <p className='font-normal'>Oct 2020 - Future</p>
+                            <p className='font-normal'>Jan 2021 - Future</p>
                             <p className='font-normal'>Vue, Express, Mysql, ElementUI</p>
                             <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/EGGroup_V2'>Github</a></p>
                             <Image src={eggroup}></Image>
                         </Panel>
+                    </Collapse>
+                    <Divider orientation='left' ><CalendarOutlined /> 2020</Divider>
+                    <Collapse defaultActiveKey={['p16']} ghost>
                         <Panel className='font-bold' header="Fixed Income Security- NS Model" key="p16">
                             <p className='font-normal'>Sept 2020 - Nov 2020</p>
                             <p className='font-normal'>Vue, Flask, Echarts</p>
