@@ -47,20 +47,20 @@ class Projects extends React.Component {
                 <div id='prj001' className='margin-97'>
                     <Divider orientation="left"><SolutionOutlined /> Projects</Divider>
                     <Divider orientation='left' ><CalendarOutlined /> 2021</Divider>
-                    <Collapse defaultActiveKey={['p23']} ghost>
-                        <Panel className='font-bold' header="FinTech Algorithms" key="p23">
+                    <Collapse defaultActiveKey={['p22']} ghost>
+                        <Panel className='font-bold' header="EGGroup" key="p23">
+                            <p className='font-normal'>Jan 2021 - Future</p>
+                            <p className='font-normal'>Vue, Express, Mysql, ElementUI</p>
+                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/EGGroup_V2'>Github</a></p>
+                            <Image src={eggroup} width="50%"></Image>
+                        </Panel>
+                        <Panel className='font-bold' header="FinTech Algorithms" key="p22">
                             <p className='font-normal'>Jan 2021 - April 2021</p>
                             <p className='font-normal'>Vue, Django, Sqlite, ElementUI</p>
                             <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/FinTech_Algorithms'>Github</a></p>
                         </Panel>
-                        <Panel className='font-bold' header="EGGroup" key="p22">
-                            <p className='font-normal'>Jan 2021 - Future</p>
-                            <p className='font-normal'>Vue, Express, Mysql, ElementUI</p>
-                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/EGGroup_V2'>Github</a></p>
-                            <Image src={eggroup}></Image>
-                        </Panel>
                         <Panel className='font-bold' header="Sharing Bike System" key="p21">
-                            <p className='font-normal'>Jan 2021</p>
+                            <p className='font-normal'>Jan 2021 - Feb 2021</p>
                             <p className='font-normal'>Django, Sqlite, Echarts</p>
                             <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/SharingBike'>Github</a></p>
                             <Image src={sharingbike} width="50%"></Image>
@@ -68,77 +68,78 @@ class Projects extends React.Component {
                     </Collapse>
                     <Divider orientation='left' ><CalendarOutlined /> 2020</Divider>
                     <Collapse defaultActiveKey={['p20']} ghost>
-                        <Panel className='font-bold' header="FinTech - Fixed Income Security (NS Model)" key="p20">
+                        <Panel className='font-bold' header="Personal Website V3.0" key="p20">
+                            <p className='font-normal'>Oct 2020 - Now</p>
+                            <p className='font-normal'>Angular, Django, Sqlite</p>
+                            <Image src={easyv3} width="50%"></Image>
+                        </Panel>
+                        <Panel className='font-bold' header="FinTech - Fixed Income Security (NS Model)" key="p19">
                             <p className='font-normal'>Sept 2020 - Nov 2020</p>
                             <p className='font-normal'>Vue, Flask, Echarts</p>
                             <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/FinTech_FishGroup'>Github</a></p>
                             <Image src={fishgroup} width="50%"></Image>
                         </Panel>
-                        <Panel className='font-bold' header="LinkedIn Network New Feature" key="p19">
+                        <Panel className='font-bold' header="LinkedIn Network New Feature" key="p18">
                             <p className='font-normal'>Sept 2020 - Nov 2020</p>
                             <p className='font-normal'>Sketch, Wireframe, Prototype</p>
                             <p><a rel="noopener noreferrer" href='/projects/networkFeature'>UX Portfolio</a></p>
                             <Image src={networkfeature} width="50%"></Image>
                         </Panel>
-                        <Panel className='font-bold' header="Screen Time App" key="p18">
+                        <Panel className='font-bold' header="Screen Time App" key="p17">
                             <p className='font-normal'>Sept 2020 - Nov 2020</p>
                             <p className='font-normal'>Sketch, Wireframe, Prototype</p>
                             <p><a rel="noopener noreferrer" href='/projects/screentime'>UX Portfolio</a></p>
                             <Image src={screentime}></Image>
                         </Panel>
-                        <Panel className='font-bold' header="Quantitative Nutriology" key="p17">
-                            <p className='font-normal'>June 2020 - August 2020</p>
+                        <Panel className='font-bold' header="Quantitative Nutriology" key="p16">
+                            <p className='font-normal'>May 2020 - Sept 2020</p>
                             <p className='font-normal'>Python</p>
                             <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/Knowledge_QuantitativeNutriology'>Github</a></p>
                         </Panel>
-                        <Panel className='font-bold' header="Cryptography" key="p16">
-                            <p className='font-normal'>June 2020 - August 2020</p>
+                        <Panel className='font-bold' header="Cryptography" key="p15">
+                            <p className='font-normal'>May 2020 - Sept 2020</p>
                             <p className='font-normal'>Python</p>
                             <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/Knowledge_Cryptography'>Github</a></p>
                         </Panel>
-                        <Panel className='font-bold' header="Cloud Storage App" key="p15">
+                        <Panel className='font-bold' header="Cloud Storage App" key="p14">
                             <p className='font-normal'>Apr 2020 - May 2020</p>
                             <p className='font-normal'>Django, Bootstrap, Sqlite</p>
                             <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/MobileApp_IMISCloud'>Github</a></p>
                             <Image src={imiscloud}></Image>
                         </Panel>
-                        <Panel className='font-bold' header="Home Rent Website" key="p14">
+                        <Panel className='font-bold' header="Personal Website V2.0" key="p13">
+                            <p className='font-normal'>Mar 2020 - Oct 2020</p>
+                            <p className='font-normal'>Bootstrap, Django, Mysql</p>
+                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/EasyEZ_V2'>Github</a></p>
+                            <Image src={easyv2}></Image>
+                        </Panel>
+                        <Panel className='font-bold' header="Home Rent Website" key="p12">
                             <p className='font-normal'>Jan 2020 - Apr 2020</p>
                             <p className='font-normal'>Angular, Express, MongoDB, Ng-Zorro</p>
                             <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/MeteorHome'>Github</a></p>
                             <Image src={homesearch} width="50%"></Image>
                         </Panel>
-                        <Panel className='font-bold' header="To do List" key="p13">
+                        <Panel className='font-bold' header="To do List" key="p11">
                             <p className='font-normal'>Jan 2020 - Apr 2020</p>
                             <p className='font-normal'>Angular, Express, MongoDB</p>
                             <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/Course_WebDesign/tree/master/Todolist'>Github</a></p>
                         </Panel>
-                        <Panel className='font-bold' header="MA Education Data Analysis" key="p12">
+                        <Panel className='font-bold' header="MA Education Data Analysis" key="p10">
+                        <p className='font-normal'>Jan 2020 - Apr 2020</p>
                             <p className='font-normal'>Python (Jupyter Notebook, Numpy, Pandas, Scipy, Sklearn, Matplotlib)</p>
                         </Panel>
-                        <Panel className='font-bold' header="Harrier Web Hunter" key="p11">
+                        <Panel className='font-bold' header="Harrier Web Hunter" key="p9">
                             <p className='font-normal'>Mar 2020 - Apr 2020</p>
                             <p className='font-normal'>Flask, requests</p>
                             <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/WebApp_Harrier'>Github</a></p>
                         </Panel>
-                        <Panel className='font-bold' header="FinTech - Gold Visualization" key="p10">
+                        <Panel className='font-bold' header="FinTech - Gold Visualization" key="p8">
                             <p className='font-normal'>Mar 2020 - Apr 2020</p>
                             <p className='font-normal'>Tornado, Bootstrap, Sqlite</p>
                             <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/FinTech_BEA'>Github</a></p>
                             <Image src={beagvs} width="50%"></Image>
                             <br/>
                             <Image src={pfas}></Image>
-                        </Panel>
-                        <Panel className='font-bold' header="Personal Website V3.0" key="p9">
-                            <p className='font-normal'>Oct 2020 - Now</p>
-                            <p className='font-normal'>Angular, Django, Sqlite</p>
-                            <Image src={easyv3} width="50%"></Image>
-                        </Panel>
-                        <Panel className='font-bold' header="Personal Website V2.0" key="p8">
-                            <p className='font-normal'>Mar 2020 - Oct 2020</p>
-                            <p className='font-normal'>Bootstrap, Django, Mysql</p>
-                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/EasyEZ_V2'>Github</a></p>
-                            <Image src={easyv2}></Image>
                         </Panel>
                         <Panel className='font-bold' header="Personal Website V1.0" key="p7">
                             <p className='font-normal'>Jan 2020 - Mar 2020</p>
