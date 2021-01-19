@@ -162,12 +162,13 @@ class Projects extends React.Component {
                             <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/Course_InfoSystems'>Github</a></p>
                             <Image src={his}></Image>
                         </Panel>
-                        <Panel className='font-bold' header="Gamification Used by Exploratory Search System[GUESS]" key="p4">
+                        <Panel className='font-bold' header="Gamification Used by Exploratory Search System (GUESS)" key="p4">
                             <p className='font-normal'>Sept 2018 - Jun 2019</p>
                             <p className='font-normal'>Axure RP</p>
+                            <p><a target='_blank' rel="noopener noreferrer" href='https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2020&filename=XDQB202004004&v=QvJXxfJ04mUgJFeK46HZB3jGJp5eqMM7Qdsj4Tv20LhbWiFXkr1pIAgL1aukIgd4'>CSSCI Paper</a></p>
                             <Image src={guess}></Image>
                         </Panel>
-                        <Panel className='font-bold' header="Douban Website" key="p3">
+                        <Panel className='font-bold' header="Imitate Douban Website" key="p3">
                             <p className='font-normal'>Sept 2018 - Jan 2019</p>
                             <p className='font-normal'>JSP</p>
                             <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/Course_JavaJSP'>Github</a></p>
