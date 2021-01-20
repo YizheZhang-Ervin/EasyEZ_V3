@@ -19,9 +19,9 @@ import self from '../static/img/summary.png';
 
 const { Panel } = Collapse;
 const techsDev = [
-    'Progamming Language: Python, SQL, Java',
-    'FrontEnd Language: HTML / CSS / SASS, JavaScript / TypeScript, AJAX',
-    'FrontEnd Framework: Angular, React, Vue, Bootstrap, Antd, Ng-zorro',
+    'Progamming Language: Python, SQL, C++, C#, Java, Scala, GO',
+    'FrontEnd Language: HTML / CSS / SASS, JavaScript / TypeScript',
+    'FrontEnd Framework: Angular, React, Vue, Bootstrap, Antd, ElementUI, Ng-zorro',
     'BackEnd Framework: Django, Tornado, Flask, Express(Node.js), Meteor(Node.js)',
     'Database: Sqlite, MS SqlServer, Mysql, Oracle, PostgreSql, MongoDB',
     'DevOps: Docker, K8S, AWS, Git, Postman',
@@ -32,9 +32,9 @@ const techsDev = [
 
 const techsData = [
     'Data Crawler: Requests+BeautifulSoup, Scrapy+Selenium',
-    'Data Process: Numpy, Pandas, Scipy, Sklearn, Matplotlib, Seaborn, Pyecharts',
+    'Data Process: Numpy, Pandas, Scipy, Sklearn, Matplotlib, Seaborn, Echarts',
     'Business Intelligence: Power BI, Tableau, SPSS, SSIS/SSAS/SSRS',
-    'Big Data: Hadoop, Spark, Scala, Kafka',
+    'Big Data: Hadoop, Spark, Kafka',
     'Machine Learning / Artificial Intelligence: Tensorflow, Keras',
     'Finance Data: Mplfinance, Investpy, Trendet, Pynance'
 ]
