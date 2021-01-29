@@ -17,6 +17,7 @@ import crs3 from '../static/img/projects/hnas-crs.jpg';
 import eggroup from '../static/img/projects/eggroup.png';
 import fishgroup from '../static/img/projects/fishgroup.png';
 import sharingbike from '../static/img/projects/sharingbike.png'
+import yzgame from '../static/img/projects/yzgame.png'
 
 const { Panel } = Collapse;
 
@@ -47,7 +48,13 @@ class Projects extends React.Component {
                 <div id='prj001' className='margin-97'>
                     <Divider orientation="left"><SolutionOutlined /> Projects</Divider>
                     <Divider orientation='left' ><CalendarOutlined /> 2021</Divider>
-                    <Collapse defaultActiveKey={['p22']} ghost>
+                    <Collapse defaultActiveKey={['p24']} ghost>
+                        <Panel className='font-bold' header="YZGame" key="p24">
+                            <p className='font-normal'>Jan 2021 - April 2021</p>
+                            <p className='font-normal'>Unity, Vue, Flask, ElementUI</p>
+                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/YZGame'>Github</a></p>
+                            <Image src={yzgame} width="50%"></Image>
+                        </Panel>
                         <Panel className='font-bold' header="EGGroup" key="p23">
                             <p className='font-normal'>Jan 2021 - Future</p>
                             <p className='font-normal'>Vue, Express, Mysql, ElementUI</p>
@@ -104,7 +111,7 @@ class Projects extends React.Component {
                         <Panel className='font-bold' header="Cloud Storage App" key="p14">
                             <p className='font-normal'>Apr 2020 - May 2020</p>
                             <p className='font-normal'>Django, Bootstrap, Sqlite</p>
-                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/MobileApp_IMISCloud'>Github</a></p>
+                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/IMISCloud'>Github</a></p>
                             <Image src={imiscloud}></Image>
                         </Panel>
                         <Panel className='font-bold' header="Personal Website V2.0" key="p13">
@@ -131,7 +138,7 @@ class Projects extends React.Component {
                         <Panel className='font-bold' header="Harrier Web Hunter" key="p9">
                             <p className='font-normal'>Mar 2020 - Apr 2020</p>
                             <p className='font-normal'>Flask, requests</p>
-                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/WebApp_Harrier'>Github</a></p>
+                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/Harrier'>Github</a></p>
                         </Panel>
                         <Panel className='font-bold' header="FinTech - Gold Visualization" key="p8">
                             <p className='font-normal'>Mar 2020 - Apr 2020</p>
