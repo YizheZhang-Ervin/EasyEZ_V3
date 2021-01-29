@@ -11,7 +11,7 @@ import ut1 from '../../static/img/projects/screenTime/usabilityTesting_prepare.p
 import ut2 from '../../static/img/projects/screenTime/usabilityTesting_prepare2.png';
 import bluesky from '../../static/img/projects/screenTime/bluesky.jpg';
 import usabilityTestingResult from '../../static/img/projects/screenTime/usabilityTestingResult.png';
-import music_xydm from '../../static/others/xydm.mp3';
+// import music_xydm from '../../static/others/xydm.mp3';
 import { PlayCircleFilled, CaretRightOutlined } from '@ant-design/icons';
 
 const { Panel } = Collapse;
@@ -62,14 +62,14 @@ class ScreenTime extends React.Component {
         document.getElementById('phone').src = 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FYsboooRylBRXw6cDIpsI8L%2FProjects%3Fnode-id%3D410%253A728%26scaling%3Dscale-down';
     }
 
-    changeMusicStatus() {
-        let music = document.getElementById('music');
-        if (music.paused) {
-            music.play();
-        } else {
-            music.pause();
-        }
-    }
+    // changeMusicStatus() {
+    //     let music = document.getElementById('music');
+    //     if (music.paused) {
+    //         music.play();
+    //     } else {
+    //         music.pause();
+    //     }
+    // }
 
     render() {
         const tableColumn = [{ title: 'Module', dataIndex: 'module', key: 'module' },
@@ -127,10 +127,10 @@ class ScreenTime extends React.Component {
                             ghost size='large' style={{ float: 'left', height: '64px', border: 'none' }}>
                             Prototype
                         </Button>
-                        <audio id='music' style={{ display: 'fixed', zIndex: '10' }} src={music_xydm} loop></audio>
-                        <Button onClick={() => this.changeMusicStatus()} title='Play/Pause'
+                        {/* <audio id='music' style={{ display: 'fixed', zIndex: '10' }} src={music_xydm} loop></audio> */}
+                        {/* <Button onClick={() => this.changeMusicStatus()} title='Play/Pause'
                             icon={<PlayCircleFilled spin />} ghost size='large' style={{ border: 'none', height: '64px', float: 'right' }}>
-                        </Button>
+                        </Button> */}
                     </Header>
                     {/* content */}
                     <Content>

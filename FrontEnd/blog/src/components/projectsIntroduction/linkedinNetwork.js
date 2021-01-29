@@ -12,7 +12,7 @@ import ut2 from '../../static/img/projects/networkFeature/usabilitytesting2.png'
 import linkedinbg from '../../static/img/projects/networkFeature/linkedinbg.png';
 import linkedinlogo from '../../static/img/projects/networkFeature/linkedinlogo.png';
 import ut3 from '../../static/img/projects/networkFeature/usabilitytesting3.png';
-import music_xydm from '../../static/others/xydm.mp3';
+// import music_xydm from '../../static/others/xydm.mp3';
 import { PlayCircleFilled, CaretRightOutlined } from '@ant-design/icons';
 
 const { Panel } = Collapse;
@@ -64,14 +64,14 @@ class ScreenTime extends React.Component {
         })
     }
 
-    changeMusicStatus() {
-        let music = document.getElementById('music');
-        if (music.paused) {
-            music.play();
-        } else {
-            music.pause();
-        }
-    }
+    // changeMusicStatus() {
+    //     let music = document.getElementById('music');
+    //     if (music.paused) {
+    //         music.play();
+    //     } else {
+    //         music.pause();
+    //     }
+    // }
 
     render() {
         const tableColumn = [{ title: 'Side', dataIndex: 'side', key: 'side' },
@@ -123,10 +123,10 @@ class ScreenTime extends React.Component {
                             ghost size='large' style={{ float: 'left', height: '64px', border: 'none' }}>
                             Prototype
                         </Button>
-                        <audio id='music' style={{ display: 'fixed', zIndex: '10' }} src={music_xydm} loop></audio>
+                        {/* <audio id='music' style={{ display: 'fixed', zIndex: '10' }} src={music_xydm} loop></audio>
                         <Button onClick={() => this.changeMusicStatus()} title='Play/Pause'
                             icon={<PlayCircleFilled spin />} ghost size='large' style={{ border: 'none', height: '64px', float: 'right' }}>
-                        </Button>
+                        </Button> */}
                     </Header>
                     {/* content */}
                     <Content>
