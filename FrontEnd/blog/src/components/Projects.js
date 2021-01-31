@@ -67,7 +67,7 @@ class Projects extends React.Component {
                         </Panel>
                     </Collapse>
                     <Divider orientation='left' ><CalendarOutlined /> 2020</Divider>
-                    <Collapse defaultActiveKey={['p29']} ghost>
+                    <Collapse defaultActiveKey={['p19']} ghost>
                         <Panel className='font-bold' header="Personal Website V3.0" key="p21">
                             <p className='font-normal'>Oct 2020 - Now</p>
                             <p className='font-normal'>Angular, Django, Sqlite</p>
