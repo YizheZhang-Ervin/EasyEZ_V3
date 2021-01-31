@@ -24,9 +24,9 @@ const techsDev = [
     'FrontEnd Framework: Angular, React, Vue, Bootstrap, Antd, ElementUI, Ng-zorro',
     'BackEnd Framework: Django, Tornado, Flask, Express(Node.js), Meteor(Node.js)',
     'Database: Sqlite, MS SqlServer, Mysql, Oracle, PostgreSql, MongoDB',
-    'DevOps: Docker, K8S, AWS, Git, Postman',
+    'DevOps: Webpack, Nginx, Docker, K8S, AWS, Git, Postman',
     'Testing: Selenium',
-    'GUI/Game: Unity, Unreal, Tkinter, Pyqt, Pygame',
+    'GUI/Game: Unity3d, Unreal, Tkinter, Pyqt, Pygame',
     'OS: Windows, Linux'
 ];
 
