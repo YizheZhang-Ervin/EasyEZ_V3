@@ -112,6 +112,7 @@ else:
     # use to collect static files when deploys it
     STATIC_ROOT = os.path.join(BASE_DIR, 'static')
     STATICFILES_DIRS = [os.path.join(BASE_DIR, 'staticfiles')]
+    
 
 ALLOWED_HOSTS = ['*']
 

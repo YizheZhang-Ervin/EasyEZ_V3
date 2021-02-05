@@ -48,18 +48,23 @@ class Projects extends React.Component {
                     <Divider orientation="left"><SolutionOutlined /> Projects</Divider>
                     <Divider orientation='left' ><CalendarOutlined /> 2021</Divider>
                     <Collapse defaultActiveKey={['p22']} ghost>
-                        <Panel className='font-bold' header="YeStock" key="p24">
-                            <p className='font-normal'>Jan 2021 - April 2021</p>
-                            <p className='font-normal'>Unity, Vue, Flask, ElementUI, Echarts</p>
-                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/YeStock'>Github</a></p>
-                        </Panel>
-                        <Panel className='font-bold' header="EGGroup" key="p23">
+                        <Panel className='font-bold' header="EZ Info" key="p24">
                             <p className='font-normal'>Jan 2021 - Future</p>
+                            <p className='font-normal'>Vue, Django, Echarts, ElementUI, peerjs</p>
+                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/EZ_Info'>Github</a></p>
+                        </Panel>
+                        <Panel className='font-bold' header="YeStock" key="p23">
+                            <p className='font-normal'>Jan 2021 - April 2021</p>
+                            <p className='font-normal'>Vue, Flask, ElementUI, Echarts</p>
+                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/FinTech_YeStock'>Github</a></p>
+                        </Panel>
+                        <Panel className='font-bold' header="EGGroup" key="p22">
+                            <p className='font-normal'>Jan 2021 - April 2021</p>
                             <p className='font-normal'>Vue, Express, Mysql, ElementUI</p>
                             <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/EGGroup_V2'>Github</a></p>
                             <Image src={eggroup} width="50%"></Image>
                         </Panel>
-                        <Panel className='font-bold' header="Sharing Bike System" key="p22">
+                        <Panel className='font-bold' header="Sharing Bike System" key="p21">
                             <p className='font-normal'>Jan 2021 - Feb 2021</p>
                             <p className='font-normal'>Django, Sqlite, Echarts</p>
                             <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/SharingBike'>Github</a></p>
@@ -68,15 +73,10 @@ class Projects extends React.Component {
                     </Collapse>
                     <Divider orientation='left' ><CalendarOutlined /> 2020</Divider>
                     <Collapse defaultActiveKey={['p19']} ghost>
-                        <Panel className='font-bold' header="Personal Website V3.0" key="p21">
+                        <Panel className='font-bold' header="Personal Website V3.0" key="p20">
                             <p className='font-normal'>Oct 2020 - Now</p>
                             <p className='font-normal'>Angular, Django, Sqlite</p>
                             <Image src={easyv3} width="50%"></Image>
-                        </Panel>
-                        <Panel className='font-bold' header="FinTech Algorithms" key="p20">
-                            <p className='font-normal'>Sept 2020 - Nov 2020</p>
-                            <p className='font-normal'>Vue, Django, Echarts, ElementUI</p>
-                            <p><a target='_blank' rel="noopener noreferrer" href='https://github.com/YizheZhang-Ervin/FinTech_Algorithms'>Github</a></p>
                         </Panel>
                         <Panel className='font-bold' header="FinTech - Fixed Income Security (NS Model)" key="p19">
                             <p className='font-normal'>Sept 2020 - Nov 2020</p>
